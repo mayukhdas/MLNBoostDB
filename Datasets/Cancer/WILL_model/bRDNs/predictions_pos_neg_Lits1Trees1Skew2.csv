@@ -1,0 +1,6 @@
+pos, 0.28052658778904555, cancer(zod)
+pos, 0.28052658778904555, cancer(xena)
+pos, 0.28052658778904555, cancer(yoda)
+neg, 0.14185106490048777, cancer(watson)
+neg, 0.14185106490048777, cancer(voldemort)
+

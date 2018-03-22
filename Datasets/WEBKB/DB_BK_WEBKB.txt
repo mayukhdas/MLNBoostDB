@@ -1,0 +1,24 @@
+// BK file follows assumption that each predicate name is unique
+// Options for the ILP search:
+option(M) = 20. 	// Number of gradient steps
+option(CM) = 1. 	// Number of clauses learned for each target per gradient step
+option(N) = 4.  	// Maximum length of a clause
+option(B) = 10.		// Beam size
+
+// Predicate definitions:
+predDef: courseprof(Course, Person)?.
+predDef: courseta(Course, Person).
+predDef: faculty(Person).
+predDef: project(Proj, Person).
+predDef: sameperson(Person, Person).
+predDef: student(Person).
+
+mode: courseprof(-, +).
+mode: courseprof(+, -).
+mode: courseta(+, -).
+mode: courseta(-, +).
+mode: faculty(+).
+mode: project(-, +).
+mode: project(+, -).
+mode: sameperson(-, +).
+mode: student(+).

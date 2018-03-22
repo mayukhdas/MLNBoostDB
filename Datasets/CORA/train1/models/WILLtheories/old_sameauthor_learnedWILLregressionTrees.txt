@@ -1,0 +1,135 @@
+usePrologVariables: true.
+
+% maxTreeDepthInNodes                 = 5
+% maxTreeDepthInLiterals              = 12
+% maxNumberOfLiteralsAtAnInteriorNode = 1
+% maxFreeBridgersInBody               = 1
+% maxNumberOfClauses                  = 3
+% maxNodesToConsider                  = 10
+% maxNodesToCreate                    = 10,000
+% maxAcceptableNodeScoreToStop        = 0.003
+% negPosRatio                         = 2.000
+% testNegPosRatio                     = -1.000
+% # of pos examples                   = 1,769
+% # of neg examples                   = 0
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for sameauthor.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+sameauthor(D, E, Total) :- // A general accessor. 
+   sameauthor(D, E, 1000000, Total), !.
+sameauthor(D, E, Total) :- waitHere("This should not fail", sameauthor(D, E, Total)).
+
+sameauthor(D, E, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_sameauthor_tree1(D, E, TreesToUse, Total1),
+   getScore_sameauthor_tree2(D, E, TreesToUse, Total2),
+   getScore_sameauthor_tree3(D, E, TreesToUse, Total3),
+   getScore_sameauthor_tree4(D, E, TreesToUse, Total4),
+   getScore_sameauthor_tree5(D, E, TreesToUse, Total5),
+   getScore_sameauthor_tree6(D, E, TreesToUse, Total6),
+   getScore_sameauthor_tree7(D, E, TreesToUse, Total7),
+   getScore_sameauthor_tree8(D, E, TreesToUse, Total8),
+   getScore_sameauthor_tree9(D, E, TreesToUse, Total9),
+   getScore_sameauthor_tree10(D, E, TreesToUse, Total10),
+   getScore_sameauthor_tree11(D, E, TreesToUse, Total11),
+   getScore_sameauthor_tree12(D, E, TreesToUse, Total12),
+   getScore_sameauthor_tree13(D, E, TreesToUse, Total13),
+   getScore_sameauthor_tree14(D, E, TreesToUse, Total14),
+   getScore_sameauthor_tree15(D, E, TreesToUse, Total15),
+   getScore_sameauthor_tree16(D, E, TreesToUse, Total16),
+   getScore_sameauthor_tree17(D, E, TreesToUse, Total17),
+   getScore_sameauthor_tree18(D, E, TreesToUse, Total18),
+   getScore_sameauthor_tree19(D, E, TreesToUse, Total19),
+   getScore_sameauthor_tree20(D, E, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+sameauthor(D, E, TreesToUse, Total) :- waitHere("This should not fail", sameauthor(D, E, TreesToUse, Total)).
+
+getScore_sameauthor_tree1(D, E, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_sameauthor_tree1(D, E, TreesToUse, Total1) :- sameauthor_tree1(D, E, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_sameauthor_tree2(D, E, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_sameauthor_tree2(D, E, TreesToUse, Total2) :- sameauthor_tree2(D, E, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_sameauthor_tree3(D, E, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_sameauthor_tree3(D, E, TreesToUse, Total3) :- sameauthor_tree3(D, E, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_sameauthor_tree4(D, E, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_sameauthor_tree4(D, E, TreesToUse, Total4) :- sameauthor_tree4(D, E, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_sameauthor_tree5(D, E, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_sameauthor_tree5(D, E, TreesToUse, Total5) :- sameauthor_tree5(D, E, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_sameauthor_tree6(D, E, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_sameauthor_tree6(D, E, TreesToUse, Total6) :- sameauthor_tree6(D, E, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_sameauthor_tree7(D, E, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_sameauthor_tree7(D, E, TreesToUse, Total7) :- sameauthor_tree7(D, E, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_sameauthor_tree8(D, E, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_sameauthor_tree8(D, E, TreesToUse, Total8) :- sameauthor_tree8(D, E, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_sameauthor_tree9(D, E, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_sameauthor_tree9(D, E, TreesToUse, Total9) :- sameauthor_tree9(D, E, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_sameauthor_tree10(D, E, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_sameauthor_tree10(D, E, TreesToUse, Total10) :- sameauthor_tree10(D, E, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_sameauthor_tree11(D, E, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_sameauthor_tree11(D, E, TreesToUse, Total11) :- sameauthor_tree11(D, E, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_sameauthor_tree12(D, E, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_sameauthor_tree12(D, E, TreesToUse, Total12) :- sameauthor_tree12(D, E, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_sameauthor_tree13(D, E, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_sameauthor_tree13(D, E, TreesToUse, Total13) :- sameauthor_tree13(D, E, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_sameauthor_tree14(D, E, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_sameauthor_tree14(D, E, TreesToUse, Total14) :- sameauthor_tree14(D, E, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_sameauthor_tree15(D, E, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_sameauthor_tree15(D, E, TreesToUse, Total15) :- sameauthor_tree15(D, E, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_sameauthor_tree16(D, E, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_sameauthor_tree16(D, E, TreesToUse, Total16) :- sameauthor_tree16(D, E, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_sameauthor_tree17(D, E, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_sameauthor_tree17(D, E, TreesToUse, Total17) :- sameauthor_tree17(D, E, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_sameauthor_tree18(D, E, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_sameauthor_tree18(D, E, TreesToUse, Total18) :- sameauthor_tree18(D, E, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_sameauthor_tree19(D, E, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_sameauthor_tree19(D, E, TreesToUse, Total19) :- sameauthor_tree19(D, E, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_sameauthor_tree20(D, E, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_sameauthor_tree20(D, E, TreesToUse, Total20) :- sameauthor_tree20(D, E, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(0, []).

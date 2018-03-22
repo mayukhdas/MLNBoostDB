@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+sameauthor(_, _, 0.16998082347749593) /* #neg=1,189 #pos=603 */ .

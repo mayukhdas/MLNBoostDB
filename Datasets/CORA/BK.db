@@ -1,0 +1,34 @@
+queryPred: samebib/2.
+queryPred: sametitle/2.
+queryPred: samevenue/2.
+queryPred: sameauthor/2.
+
+//predicate declarations.
+mode: author(+paper, -auth).
+mode: haswordauthor(+auth, -word).
+mode: haswordtitle(+title, -word).
+mode: haswordvenue(+venue, -word).
+mode: title(+paper, -title).
+mode: venue(+paper, -venue).
+
+mode: author(-paper, +auth).
+mode: haswordauthor(-auth, +word).
+mode: haswordtitle(-title, +word).
+mode: haswordvenue(-venue, +word).
+mode: title(-paper, +title).
+mode: venue(-paper, +venue).
+
+mode: samebib(+paper, +paper).
+mode: sametitle(+title, +title).
+mode: samevenue(+venue, +venue).
+mode: sameauthor(+auth, +auth).
+
+mode: samebib(+paper, -paper).
+mode: sametitle(+title, -title).
+mode: samevenue(+venue, -venue).
+mode: sameauthor(+auth, -auth).
+
+mode: samebib(-paper, +paper).
+mode: sametitle(-title, +title).
+mode: samevenue(-venue, +venue).
+mode: sameauthor(-auth, +auth).

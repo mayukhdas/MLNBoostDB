@@ -1,0 +1,126 @@
+/**
+  * javacc parser for the facts file
+  *
+  * @author Marcin Malec
+  * 
+  * Last Modified: November 4, 2015
+  */
+
+options {
+  JAVA_UNICODE_ESCAPE = true;
+  STATIC = false;
+}
+
+PARSER_BEGIN(BK_Parser)
+package edu.soic.Parse.BK;
+
+import edu.soic.Learning.Boosting.LearningProblem;
+import java.util.ArrayList;
+import edu.soic.FOL.Predicate;
+
+public class BK_Parser {
+	LearningProblem lp = new LearningProblem();
+}
+
+PARSER_END(BK_Parser)
+SKIP :
+{
+	  " "
+	| "\t"
+	| "\n"
+	| "\r"
+    | < "//" (~["\r", "\n"])* >
+	| < "/*" (~["*"])* "*" ("*" | (~["*","/"] (~["*"])* "*"))* "/" >
+}
+
+TOKEN :
+{	< OPTION: "option">
+}
+
+TOKEN :
+{
+  < INT: ["1"-"9"] (["0"-"9"])* >
+|   < ID: ["a"-"z","A"-"Z"] (["a"-"z","A"-"Z","0"-"9","_"])* >
+
+}
+
+void BKFile() :
+{}
+{
+  	(option())*
+	(predDef())+
+	(mode())*
+  	<EOF>
+}
+
+
+
+//-------OPTIONS
+void option() :
+{	Token opt;
+ 	Token value;
+}{
+  	<OPTION> "(" opt = <ID> ")" "=" value = <INT> "."
+	{
+	  	if(opt.image.equals("M"))	  	{			lp.setGradientSteps(Integer.parseInt(value.image));
+	  	}
+	  	else if(opt.image.equals("CM"))	  	{
+			lp.setClausesPerGS(Integer.parseInt(value.image));
+	  	}
+	  	else if(opt.image.equals("N"))
+	  	{
+			lp.setMaxClauseLen(Integer.parseInt(value.image));
+	  	}
+	  	else if(opt.image.equals("MC"))	  	{
+	  	  	lp.setMaxExp(Integer.parseInt(value.image));	 	}  
+	  	else	  	{
+			lp.setBeamLength(Integer.parseInt(value.image));
+	  	}
+	 }}
+
+void predDef() :
+{	Token tp;
+	Token tt;
+	ArrayList<String> types = new ArrayList<String>();
+	boolean isQuery = false;
+}
+{	"predDef:" tp = <ID> "(" tt = <ID> {types.add(tt.image);}
+		("," tt = <ID> {types.add(tt.image);})* ")" ["?"{isQuery = true;}] "."
+	{  
+		Predicate p = new Predicate(tp.image, types.size());
+		for(int i = 0; i < types.size(); ++i)		{			p.setType(i, types.get(i));
+		}
+		lp.addPredicate(tp.image, p, isQuery);
+	}
+}
+
+void mode() :{	Token tmode;
+	Token tp;
+	Predicate p;
+	String[] modes;
+	int i = 0;
+}
+{	"mode:" tp = <ID>	{p = lp.getPred(tp.image);modes = new String[p.getArity()];} "("
+		(		  		tmode = "+"
+			|	tmode = "-"
+			|	tmode = "_"
+			|	tmode = "#"
+		)
+	{modes[i++] = tmode.image;}
+	(","
+		(
+		  		tmode = "+"
+			|	tmode = "-"
+		    |	tmode = "_"
+			|	tmode = "#"
+		)	
+	{modes[i++] = tmode.image;}
+	 )* ")" "."
+
+	 {	p.addMode(modes);}
+}
+
+LearningProblem getLP() :
+{}
+{	{return lp;}
+}

@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+(workedunder(A, B, 0.25097341982866905) :- genre(B, _), movie(C, A), movie(C, B)).

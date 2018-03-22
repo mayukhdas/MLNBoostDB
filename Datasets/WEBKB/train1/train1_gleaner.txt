@@ -1,0 +1,119 @@
+////// Learned from a dataset containing 71,079 positive (71,079.0 weighted sum) and 0 negative (0.0 wgt'ed) examples.
+////// The minimal (wgt'ed) coverage = 3.000, the maximal (wgt'ed) NEG coverage = 0.499, and the minimal (wgt'ed) precision = 0.001 (using m = 0.1)
+
+usePrologVariables: true.
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: allPossibleMarkers
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #0, (-Infinity, 0.05], from 'outerLoop #1, null' and covering 107.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.002, precision = 0.999, and F1 = 0.003 - learned after 2 total and 0 acceptable nodes.  Node score = -1501.2191128375568
+
+ FOR courseprof(D, E) IF (courseta(D, E)) THEN output = -0.026585 ELSE output = -0.140414;
+
+// Best in (weighted) recall bin #2, (0.1, 0.15], from 'outerLoop #1, null' and covering 7,998.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.113, precision = 1.000, and F1 = 0.202 - learned after 4 total and 2 acceptable nodes.  Node score = -1501.2191128382174
+
+ FOR courseprof(D, E) IF (courseta(Anon26983, E)) THEN output = -0.140309 ELSE output = -0.140234;
+
+// Best in (weighted) recall bin #3, (0.15, 0.2], from 'outerLoop #1, null' and covering 13,803.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.194, precision = 1.000, and F1 = 0.325 - learned after 5 total and 3 acceptable nodes.  Node score = -1501.2191128388272
+
+ FOR courseprof(D, E) IF (faculty(E)) THEN output = -0.134824 ELSE output = -0.141548;
+
+// Best in (weighted) recall bin #6, (0.3, 0.35], from 'outerLoop #1, null' and covering 24,252.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.341, precision = 1.000, and F1 = 0.509 - learned after 78 total and 67 acceptable nodes.  Node score = -1501.219112838951
+
+ FOR courseprof(D, E) IF (sameperson(E, E), project(Anon27559, E)) THEN output = -0.139354 ELSE output = -0.140703;
+
+// Best in (weighted) recall bin #8, (0.4, 0.45], from 'outerLoop #1, null' and covering 28,509.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.401, precision = 1.000, and F1 = 0.573 - learned after 6 total and 4 acceptable nodes.  Node score = -1501.219112839079
+
+ FOR courseprof(D, E) IF (project(Anon26985, E)) THEN output = -0.139657 ELSE output = -0.140635;
+
+// Best in (weighted) recall bin #9, (0.45, 0.5], from 'outerLoop #1, null' and covering 33,605.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.473, precision = 1.000, and F1 = 0.642 - learned after 75 total and 64 acceptable nodes.  Node score = -1501.2191128389763
+
+ FOR courseprof(D, E) IF (sameperson(E, E), courseta(D, Anon27555)) THEN output = -0.140591 ELSE output = -0.139930;
+
+// Best in (weighted) recall bin #10, (0.5, 0.55], from 'outerLoop #1, null' and covering 35,815.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.504, precision = 1.000, and F1 = 0.670 - learned after 3 total and 1 acceptable nodes.  Node score = -1501.219112839096
+
+ FOR courseprof(D, E) IF (courseta(D, Anon26981)) THEN output = -0.140641 ELSE output = -0.139838;
+
+// Best in (weighted) recall bin #14, (0.7, 0.75], from 'outerLoop #1, null' and covering 52,890.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.744, precision = 1.000, and F1 = 0.853 - learned after 9 total and 7 acceptable nodes.  Node score = -1501.2191128391214
+
+ FOR courseprof(D, E) IF (student(E)) THEN output = -0.141618 ELSE output = -0.136243;
+
+// Best in (weighted) recall bin #18, (0.9, 0.95], from 'outerLoop #1, null' and covering 66,693.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.938, precision = 1.000, and F1 = 0.968 - learned after 7 total and 5 acceptable nodes.  Node score = -1501.219112837866
+
+ FOR courseprof(D, E) IF (sameperson(E, E)) THEN output = -0.140212 ELSE output = -0.140711;
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs718, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwcscornelledunfooursespring96514indexhtml, ahttpsimoncscornelledunfoeoplevogels) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpsimoncscornelledunfooursespring96515, ahttpsimoncscornelledunfoeoplevogels) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs417, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs418, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: outerLoop #1, null
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #0, (-Infinity, 0.05], from 'outerLoop #1, null' and covering 107.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.002, precision = 0.999, and F1 = 0.003 - learned after 2 total and 0 acceptable nodes.  Node score = -1501.2191128375568
+
+ FOR courseprof(D, E) IF (courseta(D, E)) THEN output = -0.026585 ELSE output = -0.140414;
+
+// Best in (weighted) recall bin #2, (0.1, 0.15], from 'outerLoop #1, null' and covering 7,998.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.113, precision = 1.000, and F1 = 0.202 - learned after 4 total and 2 acceptable nodes.  Node score = -1501.2191128382174
+
+ FOR courseprof(D, E) IF (courseta(Anon26983, E)) THEN output = -0.140309 ELSE output = -0.140234;
+
+// Best in (weighted) recall bin #3, (0.15, 0.2], from 'outerLoop #1, null' and covering 13,803.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.194, precision = 1.000, and F1 = 0.325 - learned after 5 total and 3 acceptable nodes.  Node score = -1501.2191128388272
+
+ FOR courseprof(D, E) IF (faculty(E)) THEN output = -0.134824 ELSE output = -0.141548;
+
+// Best in (weighted) recall bin #6, (0.3, 0.35], from 'outerLoop #1, null' and covering 24,252.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.341, precision = 1.000, and F1 = 0.509 - learned after 78 total and 67 acceptable nodes.  Node score = -1501.219112838951
+
+ FOR courseprof(D, E) IF (sameperson(E, E), project(Anon27559, E)) THEN output = -0.139354 ELSE output = -0.140703;
+
+// Best in (weighted) recall bin #8, (0.4, 0.45], from 'outerLoop #1, null' and covering 28,509.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.401, precision = 1.000, and F1 = 0.573 - learned after 6 total and 4 acceptable nodes.  Node score = -1501.219112839079
+
+ FOR courseprof(D, E) IF (project(Anon26985, E)) THEN output = -0.139657 ELSE output = -0.140635;
+
+// Best in (weighted) recall bin #9, (0.45, 0.5], from 'outerLoop #1, null' and covering 33,605.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.473, precision = 1.000, and F1 = 0.642 - learned after 75 total and 64 acceptable nodes.  Node score = -1501.2191128389763
+
+ FOR courseprof(D, E) IF (sameperson(E, E), courseta(D, Anon27555)) THEN output = -0.140591 ELSE output = -0.139930;
+
+// Best in (weighted) recall bin #10, (0.5, 0.55], from 'outerLoop #1, null' and covering 35,815.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.504, precision = 1.000, and F1 = 0.670 - learned after 3 total and 1 acceptable nodes.  Node score = -1501.219112839096
+
+ FOR courseprof(D, E) IF (courseta(D, Anon26981)) THEN output = -0.140641 ELSE output = -0.139838;
+
+// Best in (weighted) recall bin #14, (0.7, 0.75], from 'outerLoop #1, null' and covering 52,890.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.744, precision = 1.000, and F1 = 0.853 - learned after 9 total and 7 acceptable nodes.  Node score = -1501.2191128391214
+
+ FOR courseprof(D, E) IF (student(E)) THEN output = -0.141618 ELSE output = -0.136243;
+
+// Best in (weighted) recall bin #18, (0.9, 0.95], from 'outerLoop #1, null' and covering 66,693.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.938, precision = 1.000, and F1 = 0.968 - learned after 7 total and 5 acceptable nodes.  Node score = -1501.219112837866
+
+ FOR courseprof(D, E) IF (sameperson(E, E)) THEN output = -0.140212 ELSE output = -0.140711;
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs718, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwcscornelledunfooursespring96514indexhtml, ahttpsimoncscornelledunfoeoplevogels) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpsimoncscornelledunfooursespring96515, ahttpsimoncscornelledunfoeoplevogels) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs417, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+      /* FALSE NEG: courseprof(chttpwwwtccornelleduisualizationducationcs418, ahttpwwwtccornelledubruce) Actual Bool=true Prob=0.14185106490048777 Output=0.8581489350995122 */
+

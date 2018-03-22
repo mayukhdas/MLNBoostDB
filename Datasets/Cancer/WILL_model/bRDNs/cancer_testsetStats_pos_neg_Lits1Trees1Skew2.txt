@@ -1,0 +1,22 @@
+useLeadingQuestionMarkVariables: true.
+
+// (Arithmetic) Mean Probability Assigned to Correct Output Class: 2.558/5.00 = 0.511576
+testsetLikelihood(sum(2.558), countOfExamples(5.00), mean(0.511576)).
+
+// The weighted count of positive examples = 3.000 and the weighted count of negative examples = 2.000
+weightedSumPos(3.000).
+weightedSumNeg(2.000).
+
+//  AUC ROC   = 1.000000
+//  AUC PR    = 1.000000
+//  CLL       = -0.823843
+aucROC(cancer, 1.000000).
+aucPR( cancer, 1.000000).
+
+//   Precision = NaN at threshold = 0.500
+//   Recall    = 0.000000
+//   F1        = NaN
+precision(cancer, NaN, usingThreshold(0.5)).
+recall(   cancer, 0.000000, usingThreshold(0.5)).
+F1(       cancer, NaN, usingThreshold(0.5)).
+

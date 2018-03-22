@@ -1,0 +1,18 @@
+// DBMLNB follows assumption that each predicate name is unique
+
+// Options for the ILP search:
+option(M) = 20. 	// Number of gradient steps
+option(CM) = 1. 	// Number of clauses learned for each target per gradient step
+option(N) = 3.  	// Maximum length of a clause including the head
+option(B) = 10.		// Beam size
+
+// Predicate definitions:
+predDef: friends(person, person).
+predDef: smokes(person).
+predDef: cancer(person)?.
+
+// Modes: 
+mode: friends(+, -).
+mode: friends(-, +).
+mode: smokes(+).
+mode: cancer(+).

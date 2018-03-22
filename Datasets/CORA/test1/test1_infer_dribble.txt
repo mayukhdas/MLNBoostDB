@@ -1,0 +1,40 @@
+% Running on host: Beast
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[Datasets\CORA\test1/test1_pos.txt, Datasets\CORA\test1/test1_neg.txt, Datasets\CORA\test1/test1_bk.txt, Datasets\CORA\test1/test1_facts.txt]
+%  for N=0: args[N]=Datasets\CORA\test1/test1_pos.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\CORA\test1/test1_pos.txt, Datasets\CORA\test1/test1_neg.txt, Datasets\CORA\test1/test1_bk.txt, Datasets\CORA\test1/test1_facts.txt]
+%  for N=1: args[N]=Datasets\CORA\test1/test1_neg.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\CORA\test1/test1_pos.txt, Datasets\CORA\test1/test1_neg.txt, Datasets\CORA\test1/test1_bk.txt, Datasets\CORA\test1/test1_facts.txt]
+%  for N=2: args[N]=Datasets\CORA\test1/test1_bk.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\CORA\test1/test1_pos.txt, Datasets\CORA\test1/test1_neg.txt, Datasets\CORA\test1/test1_bk.txt, Datasets\CORA\test1/test1_facts.txt]
+%  for N=3: args[N]=Datasets\CORA\test1/test1_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../WILL_BK_cora.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []

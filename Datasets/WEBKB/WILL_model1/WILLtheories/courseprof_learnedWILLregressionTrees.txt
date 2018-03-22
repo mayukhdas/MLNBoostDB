@@ -1,0 +1,235 @@
+usePrologVariables: true.
+
+% maxTreeDepthInNodes                 = 5
+% maxTreeDepthInLiterals              = 12
+% maxNumberOfLiteralsAtAnInteriorNode = 1
+% maxFreeBridgersInBody               = 1
+% maxNumberOfClauses                  = 1
+% maxNodesToConsider                  = 10
+% maxNodesToCreate                    = 10,000
+% maxAcceptableNodeScoreToStop        = 0.003
+% negPosRatio                         = -1.000
+% testNegPosRatio                     = -1.000
+% # of pos examples                   = 71,079
+% # of neg examples                   = 0
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for courseprof.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+stepLength_tree21(1.0).
+stepLength_tree22(1.0).
+stepLength_tree23(1.0).
+stepLength_tree24(1.0).
+stepLength_tree25(1.0).
+stepLength_tree26(1.0).
+stepLength_tree27(1.0).
+stepLength_tree28(1.0).
+stepLength_tree29(1.0).
+stepLength_tree30(1.0).
+stepLength_tree31(1.0).
+stepLength_tree32(1.0).
+stepLength_tree33(1.0).
+stepLength_tree34(1.0).
+stepLength_tree35(1.0).
+stepLength_tree36(1.0).
+stepLength_tree37(1.0).
+stepLength_tree38(1.0).
+stepLength_tree39(1.0).
+stepLength_tree40(1.0).
+
+logPrior(-1.8).
+courseprof(D, E, Total) :- // A general accessor. 
+   courseprof(D, E, 1000000, Total), !.
+courseprof(D, E, Total) :- waitHere("This should not fail", courseprof(D, E, Total)).
+
+courseprof(D, E, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_courseprof_tree1(D, E, TreesToUse, Total1),
+   getScore_courseprof_tree2(D, E, TreesToUse, Total2),
+   getScore_courseprof_tree3(D, E, TreesToUse, Total3),
+   getScore_courseprof_tree4(D, E, TreesToUse, Total4),
+   getScore_courseprof_tree5(D, E, TreesToUse, Total5),
+   getScore_courseprof_tree6(D, E, TreesToUse, Total6),
+   getScore_courseprof_tree7(D, E, TreesToUse, Total7),
+   getScore_courseprof_tree8(D, E, TreesToUse, Total8),
+   getScore_courseprof_tree9(D, E, TreesToUse, Total9),
+   getScore_courseprof_tree10(D, E, TreesToUse, Total10),
+   getScore_courseprof_tree11(D, E, TreesToUse, Total11),
+   getScore_courseprof_tree12(D, E, TreesToUse, Total12),
+   getScore_courseprof_tree13(D, E, TreesToUse, Total13),
+   getScore_courseprof_tree14(D, E, TreesToUse, Total14),
+   getScore_courseprof_tree15(D, E, TreesToUse, Total15),
+   getScore_courseprof_tree16(D, E, TreesToUse, Total16),
+   getScore_courseprof_tree17(D, E, TreesToUse, Total17),
+   getScore_courseprof_tree18(D, E, TreesToUse, Total18),
+   getScore_courseprof_tree19(D, E, TreesToUse, Total19),
+   getScore_courseprof_tree20(D, E, TreesToUse, Total20),
+   getScore_courseprof_tree21(D, E, TreesToUse, Total21),
+   getScore_courseprof_tree22(D, E, TreesToUse, Total22),
+   getScore_courseprof_tree23(D, E, TreesToUse, Total23),
+   getScore_courseprof_tree24(D, E, TreesToUse, Total24),
+   getScore_courseprof_tree25(D, E, TreesToUse, Total25),
+   getScore_courseprof_tree26(D, E, TreesToUse, Total26),
+   getScore_courseprof_tree27(D, E, TreesToUse, Total27),
+   getScore_courseprof_tree28(D, E, TreesToUse, Total28),
+   getScore_courseprof_tree29(D, E, TreesToUse, Total29),
+   getScore_courseprof_tree30(D, E, TreesToUse, Total30),
+   getScore_courseprof_tree31(D, E, TreesToUse, Total31),
+   getScore_courseprof_tree32(D, E, TreesToUse, Total32),
+   getScore_courseprof_tree33(D, E, TreesToUse, Total33),
+   getScore_courseprof_tree34(D, E, TreesToUse, Total34),
+   getScore_courseprof_tree35(D, E, TreesToUse, Total35),
+   getScore_courseprof_tree36(D, E, TreesToUse, Total36),
+   getScore_courseprof_tree37(D, E, TreesToUse, Total37),
+   getScore_courseprof_tree38(D, E, TreesToUse, Total38),
+   getScore_courseprof_tree39(D, E, TreesToUse, Total39),
+   getScore_courseprof_tree40(D, E, TreesToUse, Total40),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20 + Total21 + Total22 + Total23 + Total24 + Total25 + Total26 + Total27 + Total28 + Total29 + Total30 + Total31 + Total32 + Total33 + Total34 + Total35 + Total36 + Total37 + Total38 + Total39 + Total40,
+   !.
+courseprof(D, E, TreesToUse, Total) :- waitHere("This should not fail", courseprof(D, E, TreesToUse, Total)).
+
+getScore_courseprof_tree1(D, E, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_courseprof_tree1(D, E, TreesToUse, Total1) :- courseprof_tree1(D, E, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_courseprof_tree2(D, E, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_courseprof_tree2(D, E, TreesToUse, Total2) :- courseprof_tree2(D, E, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_courseprof_tree3(D, E, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_courseprof_tree3(D, E, TreesToUse, Total3) :- courseprof_tree3(D, E, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_courseprof_tree4(D, E, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_courseprof_tree4(D, E, TreesToUse, Total4) :- courseprof_tree4(D, E, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_courseprof_tree5(D, E, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_courseprof_tree5(D, E, TreesToUse, Total5) :- courseprof_tree5(D, E, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_courseprof_tree6(D, E, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_courseprof_tree6(D, E, TreesToUse, Total6) :- courseprof_tree6(D, E, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_courseprof_tree7(D, E, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_courseprof_tree7(D, E, TreesToUse, Total7) :- courseprof_tree7(D, E, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_courseprof_tree8(D, E, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_courseprof_tree8(D, E, TreesToUse, Total8) :- courseprof_tree8(D, E, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_courseprof_tree9(D, E, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_courseprof_tree9(D, E, TreesToUse, Total9) :- courseprof_tree9(D, E, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_courseprof_tree10(D, E, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_courseprof_tree10(D, E, TreesToUse, Total10) :- courseprof_tree10(D, E, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_courseprof_tree11(D, E, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_courseprof_tree11(D, E, TreesToUse, Total11) :- courseprof_tree11(D, E, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_courseprof_tree12(D, E, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_courseprof_tree12(D, E, TreesToUse, Total12) :- courseprof_tree12(D, E, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_courseprof_tree13(D, E, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_courseprof_tree13(D, E, TreesToUse, Total13) :- courseprof_tree13(D, E, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_courseprof_tree14(D, E, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_courseprof_tree14(D, E, TreesToUse, Total14) :- courseprof_tree14(D, E, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_courseprof_tree15(D, E, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_courseprof_tree15(D, E, TreesToUse, Total15) :- courseprof_tree15(D, E, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_courseprof_tree16(D, E, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_courseprof_tree16(D, E, TreesToUse, Total16) :- courseprof_tree16(D, E, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_courseprof_tree17(D, E, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_courseprof_tree17(D, E, TreesToUse, Total17) :- courseprof_tree17(D, E, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_courseprof_tree18(D, E, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_courseprof_tree18(D, E, TreesToUse, Total18) :- courseprof_tree18(D, E, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_courseprof_tree19(D, E, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_courseprof_tree19(D, E, TreesToUse, Total19) :- courseprof_tree19(D, E, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_courseprof_tree20(D, E, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_courseprof_tree20(D, E, TreesToUse, Total20) :- courseprof_tree20(D, E, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+getScore_courseprof_tree21(D, E, TreesToUse, 0.0) :- 21 > TreesToUse, !.
+getScore_courseprof_tree21(D, E, TreesToUse, Total21) :- courseprof_tree21(D, E, Total), stepLength_tree21(StepLen), Total21 is Total * StepLen.
+
+getScore_courseprof_tree22(D, E, TreesToUse, 0.0) :- 22 > TreesToUse, !.
+getScore_courseprof_tree22(D, E, TreesToUse, Total22) :- courseprof_tree22(D, E, Total), stepLength_tree22(StepLen), Total22 is Total * StepLen.
+
+getScore_courseprof_tree23(D, E, TreesToUse, 0.0) :- 23 > TreesToUse, !.
+getScore_courseprof_tree23(D, E, TreesToUse, Total23) :- courseprof_tree23(D, E, Total), stepLength_tree23(StepLen), Total23 is Total * StepLen.
+
+getScore_courseprof_tree24(D, E, TreesToUse, 0.0) :- 24 > TreesToUse, !.
+getScore_courseprof_tree24(D, E, TreesToUse, Total24) :- courseprof_tree24(D, E, Total), stepLength_tree24(StepLen), Total24 is Total * StepLen.
+
+getScore_courseprof_tree25(D, E, TreesToUse, 0.0) :- 25 > TreesToUse, !.
+getScore_courseprof_tree25(D, E, TreesToUse, Total25) :- courseprof_tree25(D, E, Total), stepLength_tree25(StepLen), Total25 is Total * StepLen.
+
+getScore_courseprof_tree26(D, E, TreesToUse, 0.0) :- 26 > TreesToUse, !.
+getScore_courseprof_tree26(D, E, TreesToUse, Total26) :- courseprof_tree26(D, E, Total), stepLength_tree26(StepLen), Total26 is Total * StepLen.
+
+getScore_courseprof_tree27(D, E, TreesToUse, 0.0) :- 27 > TreesToUse, !.
+getScore_courseprof_tree27(D, E, TreesToUse, Total27) :- courseprof_tree27(D, E, Total), stepLength_tree27(StepLen), Total27 is Total * StepLen.
+
+getScore_courseprof_tree28(D, E, TreesToUse, 0.0) :- 28 > TreesToUse, !.
+getScore_courseprof_tree28(D, E, TreesToUse, Total28) :- courseprof_tree28(D, E, Total), stepLength_tree28(StepLen), Total28 is Total * StepLen.
+
+getScore_courseprof_tree29(D, E, TreesToUse, 0.0) :- 29 > TreesToUse, !.
+getScore_courseprof_tree29(D, E, TreesToUse, Total29) :- courseprof_tree29(D, E, Total), stepLength_tree29(StepLen), Total29 is Total * StepLen.
+
+getScore_courseprof_tree30(D, E, TreesToUse, 0.0) :- 30 > TreesToUse, !.
+getScore_courseprof_tree30(D, E, TreesToUse, Total30) :- courseprof_tree30(D, E, Total), stepLength_tree30(StepLen), Total30 is Total * StepLen.
+
+getScore_courseprof_tree31(D, E, TreesToUse, 0.0) :- 31 > TreesToUse, !.
+getScore_courseprof_tree31(D, E, TreesToUse, Total31) :- courseprof_tree31(D, E, Total), stepLength_tree31(StepLen), Total31 is Total * StepLen.
+
+getScore_courseprof_tree32(D, E, TreesToUse, 0.0) :- 32 > TreesToUse, !.
+getScore_courseprof_tree32(D, E, TreesToUse, Total32) :- courseprof_tree32(D, E, Total), stepLength_tree32(StepLen), Total32 is Total * StepLen.
+
+getScore_courseprof_tree33(D, E, TreesToUse, 0.0) :- 33 > TreesToUse, !.
+getScore_courseprof_tree33(D, E, TreesToUse, Total33) :- courseprof_tree33(D, E, Total), stepLength_tree33(StepLen), Total33 is Total * StepLen.
+
+getScore_courseprof_tree34(D, E, TreesToUse, 0.0) :- 34 > TreesToUse, !.
+getScore_courseprof_tree34(D, E, TreesToUse, Total34) :- courseprof_tree34(D, E, Total), stepLength_tree34(StepLen), Total34 is Total * StepLen.
+
+getScore_courseprof_tree35(D, E, TreesToUse, 0.0) :- 35 > TreesToUse, !.
+getScore_courseprof_tree35(D, E, TreesToUse, Total35) :- courseprof_tree35(D, E, Total), stepLength_tree35(StepLen), Total35 is Total * StepLen.
+
+getScore_courseprof_tree36(D, E, TreesToUse, 0.0) :- 36 > TreesToUse, !.
+getScore_courseprof_tree36(D, E, TreesToUse, Total36) :- courseprof_tree36(D, E, Total), stepLength_tree36(StepLen), Total36 is Total * StepLen.
+
+getScore_courseprof_tree37(D, E, TreesToUse, 0.0) :- 37 > TreesToUse, !.
+getScore_courseprof_tree37(D, E, TreesToUse, Total37) :- courseprof_tree37(D, E, Total), stepLength_tree37(StepLen), Total37 is Total * StepLen.
+
+getScore_courseprof_tree38(D, E, TreesToUse, 0.0) :- 38 > TreesToUse, !.
+getScore_courseprof_tree38(D, E, TreesToUse, Total38) :- courseprof_tree38(D, E, Total), stepLength_tree38(StepLen), Total38 is Total * StepLen.
+
+getScore_courseprof_tree39(D, E, TreesToUse, 0.0) :- 39 > TreesToUse, !.
+getScore_courseprof_tree39(D, E, TreesToUse, Total39) :- courseprof_tree39(D, E, Total), stepLength_tree39(StepLen), Total39 is Total * StepLen.
+
+getScore_courseprof_tree40(D, E, TreesToUse, 0.0) :- 40 > TreesToUse, !.
+getScore_courseprof_tree40(D, E, TreesToUse, Total40) :- courseprof_tree40(D, E, Total), stepLength_tree40(StepLen), Total40 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(0, []).

@@ -1,0 +1,193 @@
+% Running on host: Beast
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[Datasets\WEBKB\test1/test1_pos.txt, Datasets\WEBKB\test1/test1_neg.txt, Datasets\WEBKB\test1/test1_bk.txt, Datasets\WEBKB\test1/test1_facts.txt]
+%  for N=0: args[N]=Datasets\WEBKB\test1/test1_pos.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\WEBKB\test1/test1_pos.txt, Datasets\WEBKB\test1/test1_neg.txt, Datasets\WEBKB\test1/test1_bk.txt, Datasets\WEBKB\test1/test1_facts.txt]
+%  for N=1: args[N]=Datasets\WEBKB\test1/test1_neg.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\WEBKB\test1/test1_pos.txt, Datasets\WEBKB\test1/test1_neg.txt, Datasets\WEBKB\test1/test1_bk.txt, Datasets\WEBKB\test1/test1_facts.txt]
+%  for N=2: args[N]=Datasets\WEBKB\test1/test1_bk.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\WEBKB\test1/test1_pos.txt, Datasets\WEBKB\test1/test1_neg.txt, Datasets\WEBKB\test1/test1_bk.txt, Datasets\WEBKB\test1/test1_facts.txt]
+%  for N=3: args[N]=Datasets\WEBKB\test1/test1_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../WILL_BK_WEBKB.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []
+% [ LazyGroundClauseIndex ]  Building full index for sameAs/2 with 2 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for exp/3.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for log/3.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 473 facts.
+% Have read 46 examples from 'Datasets\WEBKB\test1' [Datasets\WEBKB\test1/test1*].
+% Have read 149 examples from 'Datasets\WEBKB\test1' [Datasets\WEBKB\test1/test1*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% NEW target:                 faculty(D)
+%  targetPredicateSignatures: [const]
+%  targetPred:                faculty/1
+%  targetArgTypes:            signature = [const], types = [+Person]
+%  targets:                   [faculty(D)]
+%  targetPredicates:          [faculty/1]
+%  targetArgSpecs:            [[D[+Person]]]
+%  variablesInTargets:        [[D]]
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+% Time to collect constants: 123 milliseconds
+% Time to collect examples: 0 seconds
+
+% Read 46 pos examples and 149 neg examples.
+% Time to init learnOneClause: 169 milliseconds
+% Old dirDatasets/WEBKB/DB_model1/
+
+% Have 46 'raw' positive examples and kept 0.
+% Have 149 'raw' negative examples and kept 0.
+% No pos ex for courseprof
+% No neg ex for courseprof
+
+% Target variant already exists.  Skipping target:                 faculty(E).
+%  examplePredicateSignatures: [const]
+%  targetArgTypes:            signature = [const], types = [+Person]
+%  targetArgSpecs:            [[D[+Person]]]
+
+% NEW target:                 courseprof(F, G)
+%  targetPredicateSignatures: [const, const]
+%  targetPred:                courseprof/2
+%  targetArgTypes:            signature = [const, const], types = [-Course, +Person]
+%  targets:                   [faculty(D), courseprof(F, G)]
+%  targetPredicates:          [faculty/1, courseprof/2]
+%  targetArgSpecs:            [[D[+Person]], [F[-Course], G[+Person]]]
+%  variablesInTargets:        [[D], [F, G]]
+Creating neg ex for: courseprof
+%   Have considered 1,000 possible negative examples for null.null.
+%   Have randomly created 1,000 putative negative examples.
+%   Have considered 2,000 possible negative examples for null.null.
+%   Have randomly created 2,000 putative negative examples.
+%   Have considered 3,000 possible negative examples for null.null.
+%   Have randomly created 3,000 putative negative examples.
+%   Have considered 4,000 possible negative examples for null.null.
+%   Have randomly created 4,000 putative negative examples.
+%   Have considered 5,000 possible negative examples for null.null.
+%   Have randomly created 5,000 putative negative examples.
+%   Have considered 6,000 possible negative examples for null.null.
+%   Have randomly created 6,000 putative negative examples.
+
+% Target variant already exists.  Skipping target:                 faculty(H).
+%  examplePredicateSignatures: [const]
+%  targetArgTypes:            signature = [const], types = [+Person]
+%  targetArgSpecs:            [[D[+Person]], [F[-Course], G[+Person]]]
+
+% Target variant already exists.  Skipping target:                 courseprof(I, J).
+%  examplePredicateSignatures: [const, const]
+%  targetArgTypes:            signature = [const, const], types = [-Course, +Person]
+%  targetArgSpecs:            [[D[+Person]], [F[-Course], G[+Person]]]
+
+% processing backup's for courseprof
+%  POS EX = 28
+%  NEG EX = 6,602
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 1
+%  |addedToFactBase|   = 0
+% Did not learn a model for 'courseprof' this run.
+%   loadModel (#0): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree0.tree
+%   loadModel (#1): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree1.tree
+%   loadModel (#2): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree2.tree
+%   loadModel (#3): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree3.tree
+%   loadModel (#4): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree4.tree
+%   loadModel (#5): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree5.tree
+%   loadModel (#6): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree6.tree
+%   loadModel (#7): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree7.tree
+%   loadModel (#8): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree8.tree
+%   loadModel (#9): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree9.tree
+%   loadModel (#10): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree10.tree
+%   loadModel (#11): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree11.tree
+%   loadModel (#12): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree12.tree
+%   loadModel (#13): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree13.tree
+%   loadModel (#14): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree14.tree
+%   loadModel (#15): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree15.tree
+%   loadModel (#16): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree16.tree
+%   loadModel (#17): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree17.tree
+%   loadModel (#18): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree18.tree
+%   loadModel (#19): Datasets/WEBKB/DB_model1/bRDNs/Trees/courseprofTree19.tree
+%  Done loading 20 models.
+File: Datasets\WEBKB\test1/advice.txt doesnt exist.Hence no advice loaded
+
+% for courseprof |lookupPos| = 28
+% for courseprof |lookupNeg| = 6,602
+% getJointExamples: |pos| = 28, |neg| = 6,602
+
+% Starting inference in bRDN.
+
+% Subsampling the negative examples.
+% Trees = 20
+% [ LazyGroundClauseIndex ]  Building full index for faculty/1 with 46 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for student/1 with 148 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for project/2.
+ (Arithmetic) Mean Probability Assigned to Correct Output Class: 5,271.442/6,630.00 = 0.795089
+
+ The weighted count of positive examples = 28.000 and the weighted count of negative examples = 6,602.000
+
+printExamples: Writing out predictions (for Tuffy?) on 6,630 examples for 'courseprof' to:
+  Datasets\WEBKB\test1/results_courseprof.db
+ and to:
+  Datasets\WEBKB\test1/query_courseprof.db
+%    No need to compress since small: Datasets\WEBKB\test1/query_courseprof.db
+
+% Computing Area Under Curves.
+%Pos=28
+%Neg=6602
+%LL:-10.814798063740358
+%LL:-2058.5169644662324
+
+% Running command: java -jar ./libs/auc.jar Datasets\WEBKB\test1/AUC/aucTemp.txt list 0.0
+% WAITING FOR command: java -jar ./libs/auc.jar Datasets\WEBKB\test1/AUC/aucTemp.txt list 0.0
+% DONE WAITING FOR command: java -jar ./libs/auc.jar Datasets\WEBKB\test1/AUC/aucTemp.txt list 0.0
+% F1 = 0.9824561403508771
+% Threshold = 0.36917321632523764
+
+%   AUC ROC   = 0.935723
+%   AUC PR    = 0.039702
+%   CLL	      = -0.310485
+%   Precision = 0.017903 at threshold = 0.500
+%   Recall    = 1.000000
+%   F1        = 0.035176
+
+% Total inference time (20 trees): 9.110 seconds.

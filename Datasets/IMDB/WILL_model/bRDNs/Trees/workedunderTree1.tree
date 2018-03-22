@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+(workedunder(A, B, -0.12544463852839258) :- actor(B), female_gender(B), female_gender(A)).

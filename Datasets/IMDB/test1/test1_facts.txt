@@ -1,0 +1,320 @@
+//director(asoderberghsteven).
+//director(apakulaalanj).
+//director(aaltmanroberti).
+actor(aeddiejemison).
+actor(atimothypaulperez).
+actor(acaseyaffleck).
+actor(ajorgerhernandez).
+actor(astanleyanderson).
+actor(atonygoldwyn).
+actor(afrankpatton).
+actor(anicholaswoodeson).
+actor(anelsonpeltz).
+actor(ajohnfinn).
+actor(alorigalinski).
+actor(atimrobbins).
+actor(agretascacchi).
+actor(adontiffany).
+actor(abradpitt).
+actor(ajohnheard).
+actor(aelliottgould).
+actor(aannejacques).
+actor(alylelovett).
+actor(acarolflorence).
+actor(aleahayres).
+actor(arobertculp).
+actor(adinaconnolly).
+actor(aandygarcia).
+actor(adenzelwashington).
+actor(aberniemac).
+actor(acynthiastevenson).
+actor(adeanstockwell).
+actor(aanthonyheald).
+actor(ahumecronyn).
+actor(adinamerrill).
+actor(apetergallagher).
+actor(aangelahall).
+actor(ajohnlithgow).
+actor(ajamessikking).
+actor(alarrysontag).
+actor(avincentdonofrio).
+actor(abrionjames).
+actor(afredward).
+actor(amarkgantt).
+actor(astanleytucci).
+actor(apaullnolan).
+actor(arichardegrant).
+actor(acatherinezetajones).
+actor(asamshepard).
+actor(awhoopigoldberg).
+actor(ajuliaroberts).
+actor(ageorgeclooney).
+actor(adavidsontag).
+actor(awilliamatherton).
+actor(asydneypollack).
+actor(aminianden).
+actor(ascottcaan).
+actor(aceceliaannbirt).
+actor(aedkross).
+movie(aoceanstwelve, anelsonpeltz).
+movie(aplayerthe, awhoopigoldberg).
+movie(apelicanbriefthe, ajuliaroberts).
+movie(aoceanstwelve, ajuliaroberts).
+movie(aplayerthe, avincentdonofrio).
+movie(aplayerthe, apetergallagher).
+movie(aoceanseleven, amarkgantt).
+movie(aplayerthe, afredward).
+movie(aoceanseleven, acaseyaffleck).
+movie(apelicanbriefthe, astanleyanderson).
+movie(apelicanbriefthe, ahumecronyn).
+movie(aoceanseleven, acarolflorence).
+movie(apelicanbriefthe, awilliamatherton).
+movie(apelicanbriefthe, anicholaswoodeson).
+movie(aoceanstwelve, adavidsontag).
+movie(apelicanbriefthe, ajamessikking).
+movie(apelicanbriefthe, adenzelwashington).
+movie(aoceanstwelve, aandygarcia).
+movie(aoceanstwelve, asoderberghsteven).
+movie(aplayerthe, acynthiastevenson).
+movie(apelicanbriefthe, ajohnlithgow).
+movie(aoceanseleven, aceceliaannbirt).
+movie(aoceanstwelve, aminianden).
+movie(aoceanseleven, aeddiejemison).
+movie(aoceanstwelve, aannejacques).
+movie(aplayerthe, aleahayres).
+movie(aoceanseleven, abradpitt).
+movie(aoceanstwelve, ageorgeclooney).
+movie(aoceanseleven, ageorgeclooney).
+movie(aplayerthe, asydneypollack).
+movie(aoceanstwelve, abradpitt).
+movie(aplayerthe, alylelovett).
+movie(aoceanseleven, ascottcaan).
+movie(aoceanstwelve, acaseyaffleck).
+movie(aoceanstwelve, aedkross).
+movie(aoceanstwelve, adinaconnolly).
+movie(apelicanbriefthe, atonygoldwyn).
+movie(apelicanbriefthe, apakulaalanj).
+movie(aplayerthe, arichardegrant).
+movie(aoceanstwelve, ascottcaan).
+movie(apelicanbriefthe, ajohnfinn).
+movie(aoceanseleven, asoderberghsteven).
+movie(aplayerthe, adinamerrill).
+movie(aoceanseleven, aberniemac).
+movie(aplayerthe, atimrobbins).
+movie(apelicanbriefthe, asamshepard).
+movie(aplayerthe, adeanstockwell).
+movie(aplayerthe, agretascacchi).
+movie(apelicanbriefthe, arobertculp).
+movie(apelicanbriefthe, ajohnheard).
+movie(aoceanstwelve, acatherinezetajones).
+movie(apelicanbriefthe, aanthonyheald).
+movie(aoceanseleven, apaullnolan).
+movie(aoceanstwelve, adontiffany).
+movie(aoceanstwelve, alarrysontag).
+movie(aplayerthe, abrionjames).
+movie(aoceanseleven, aelliottgould).
+movie(apelicanbriefthe, astanleytucci).
+movie(aoceanseleven, afrankpatton).
+movie(aoceanseleven, atimothypaulperez).
+movie(aoceanseleven, alorigalinski).
+movie(aplayerthe, aangelahall).
+movie(aplayerthe, aaltmanroberti).
+movie(aoceanseleven, ajorgerhernandez).
+//gender(ahumecronyn, male).
+//gender(asamshepard, male).
+//gender(atimrobbins, male).
+//gender(adavidsontag, male).
+//gender(arobertculp, male).
+female_gender(acynthiastevenson).
+//gender(afredward, male).
+female_gender(adinamerrill).
+//gender(abradpitt, male).
+//gender(adontiffany, male).
+female_gender(aangelahall).
+female_gender(apaullnolan).
+female_gender(aleahayres).
+//gender(asydneypollack, male).
+//gender(ajamessikking, male).
+female_gender(alorigalinski).
+female_gender(ajuliaroberts).
+//gender(awilliamatherton, male).
+//gender(atonygoldwyn, male).
+//gender(anelsonpeltz, male).
+//gender(adenzelwashington, male).
+//gender(astanleyanderson, male).
+//gender(ajuliaroberts, male).
+female_gender(afrankpatton).
+//gender(ajohnheard, male).
+female_gender(aberniemac).
+female_gender(aelliottgould).
+female_gender(ascottcaan).
+//gender(adeanstockwell, male).
+//gender(anicholaswoodeson, male).
+//gender(aanthonyheald, male).
+female_gender(acaseyaffleck).
+//gender(aedkross, male).
+female_gender(agretascacchi).
+//gender(apetergallagher, male).
+//gender(ascottcaan, male).
+female_gender(aminianden).
+female_gender(aceceliaannbirt).
+female_gender(abradpitt).
+female_gender(atimothypaulperez).
+//gender(abrionjames, male).
+female_gender(ajorgerhernandez).
+//gender(aandygarcia, male).
+//gender(astanleytucci, male).
+female_gender(ageorgeclooney).
+//gender(alarrysontag, male).
+female_gender(amarkgantt).
+//gender(ajohnlithgow, male).
+//gender(avincentdonofrio, male).
+female_gender(awhoopigoldberg).
+female_gender(acarolflorence).
+//gender(acaseyaffleck, male).
+female_gender(aeddiejemison).
+//gender(arichardegrant, male).
+female_gender(acatherinezetajones).
+female_gender(aannejacques).
+female_gender(adinaconnolly).
+//gender(ajohnfinn, male).
+//gender(ageorgeclooney, male).
+//gender(alylelovett, male).
+genre(apakulaalanj, athriller).
+genre(aaltmanroberti, acomedy).
+genre(asoderberghsteven, adocumentary).
+genre(asoderberghsteven, acomedy).
+genre(asoderberghsteven, athriller).
+genre(asoderberghsteven, aaction).
+genre(aaltmanroberti, athriller).
+genre(asoderberghsteven, acrime).
+genre(apakulaalanj, adrama).
+genre(apakulaalanj, amystery).
+genre(aaltmanroberti, adrama).
+workedunder(aminianden, asoderberghsteven).
+workedunder(acaseyaffleck, asoderberghsteven).
+workedunder(aelliottgould, asoderberghsteven).
+workedunder(adenzelwashington, apakulaalanj).
+workedunder(alylelovett, aaltmanroberti).
+workedunder(awhoopigoldberg, aaltmanroberti).
+workedunder(awilliamatherton, apakulaalanj).
+workedunder(anelsonpeltz, asoderberghsteven).
+workedunder(alorigalinski, asoderberghsteven).
+workedunder(astanleyanderson, apakulaalanj).
+workedunder(agretascacchi, aaltmanroberti).
+workedunder(apaullnolan, asoderberghsteven).
+workedunder(ahumecronyn, apakulaalanj).
+workedunder(ascottcaan, asoderberghsteven).
+workedunder(asamshepard, apakulaalanj).
+workedunder(aannejacques, asoderberghsteven).
+workedunder(amarkgantt, asoderberghsteven).
+workedunder(astanleytucci, apakulaalanj).
+workedunder(adeanstockwell, aaltmanroberti).
+workedunder(arobertculp, apakulaalanj).
+workedunder(aeddiejemison, asoderberghsteven).
+workedunder(aberniemac, asoderberghsteven).
+workedunder(ajohnlithgow, apakulaalanj).
+workedunder(ageorgeclooney, asoderberghsteven).
+workedunder(ajorgerhernandez, asoderberghsteven).
+workedunder(avincentdonofrio, aaltmanroberti).
+workedunder(adinamerrill, aaltmanroberti).
+workedunder(adavidsontag, asoderberghsteven).
+workedunder(arichardegrant, aaltmanroberti).
+workedunder(abrionjames, aaltmanroberti).
+workedunder(ajohnfinn, apakulaalanj).
+workedunder(acarolflorence, asoderberghsteven).
+workedunder(aanthonyheald, apakulaalanj).
+workedunder(acatherinezetajones, asoderberghsteven).
+workedunder(adinaconnolly, asoderberghsteven).
+workedunder(atonygoldwyn, apakulaalanj).
+workedunder(afredward, aaltmanroberti).
+workedunder(aceceliaannbirt, asoderberghsteven).
+workedunder(apetergallagher, aaltmanroberti).
+workedunder(aleahayres, aaltmanroberti).
+workedunder(atimothypaulperez, asoderberghsteven).
+workedunder(abradpitt, asoderberghsteven).
+workedunder(ajohnheard, apakulaalanj).
+workedunder(ajamessikking, apakulaalanj).
+workedunder(acynthiastevenson, aaltmanroberti).
+workedunder(ajuliaroberts, apakulaalanj).
+workedunder(atimrobbins, aaltmanroberti).
+workedunder(asydneypollack, aaltmanroberti).
+workedunder(afrankpatton, asoderberghsteven).
+workedunder(aangelahall, aaltmanroberti).
+workedunder(adontiffany, asoderberghsteven).
+workedunder(aedkross, asoderberghsteven).
+workedunder(aandygarcia, asoderberghsteven).
+workedunder(anicholaswoodeson, apakulaalanj).
+workedunder(ajuliaroberts, asoderberghsteven).
+workedunder(alarrysontag, asoderberghsteven).
+//samemovie(apelicanbriefthe, apelicanbriefthe).
+//samemovie(aoceanseleven, aoceanseleven).
+//samemovie(aoceanstwelve, aoceanstwelve).
+//samemovie(aplayerthe, aplayerthe).
+//samegenre(acrime, acrime).
+//samegenre(adrama, adrama).
+//samegenre(adocumentary, adocumentary).
+//samegenre(amystery, amystery).
+//samegenre(acomedy, acomedy).
+//samegenre(aaction, aaction).
+//samegenre(athriller, athriller).
+//samegender(male, male).
+//samegender(female, female).
+//sameperson(aelliottgould, aelliottgould).
+//sameperson(adinaconnolly, adinaconnolly).
+//sameperson(ageorgeclooney, ageorgeclooney).
+//sameperson(arobertculp, arobertculp).
+//sameperson(atonygoldwyn, atonygoldwyn).
+//sameperson(alarrysontag, alarrysontag).
+//sameperson(aberniemac, aberniemac).
+//sameperson(aannejacques, aannejacques).
+//sameperson(aandygarcia, aandygarcia).
+//sameperson(ajuliaroberts, ajuliaroberts).
+//sameperson(ajohnlithgow, ajohnlithgow).
+//sameperson(arichardegrant, arichardegrant).
+//sameperson(astanleytucci, astanleytucci).
+//sameperson(atimrobbins, atimrobbins).
+//sameperson(asamshepard, asamshepard).
+//sameperson(ajohnfinn, ajohnfinn).
+//sameperson(anelsonpeltz, anelsonpeltz).
+//sameperson(aceceliaannbirt, aceceliaannbirt).
+//sameperson(ascottcaan, ascottcaan).
+//sameperson(ajamessikking, ajamessikking).
+//sameperson(adontiffany, adontiffany).
+//sameperson(abradpitt, abradpitt).
+//sameperson(aleahayres, aleahayres).
+//sameperson(adeanstockwell, adeanstockwell).
+//sameperson(astanleyanderson, astanleyanderson).
+//sameperson(aedkross, aedkross).
+//sameperson(ahumecronyn, ahumecronyn).
+//sameperson(asydneypollack, asydneypollack).
+//sameperson(ajorgerhernandez, ajorgerhernandez).
+//sameperson(aangelahall, aangelahall).
+//sameperson(afrankpatton, afrankpatton).
+//sameperson(acatherinezetajones, acatherinezetajones).
+//sameperson(adavidsontag, adavidsontag).
+//sameperson(adinamerrill, adinamerrill).
+//sameperson(acaseyaffleck, acaseyaffleck).
+//sameperson(avincentdonofrio, avincentdonofrio).
+//sameperson(asoderberghsteven, asoderberghsteven).
+//sameperson(aminianden, aminianden).
+//sameperson(ajohnheard, ajohnheard).
+//sameperson(acynthiastevenson, acynthiastevenson).
+//sameperson(abrionjames, abrionjames).
+//sameperson(aaltmanroberti, aaltmanroberti).
+//sameperson(anicholaswoodeson, anicholaswoodeson).
+//sameperson(awilliamatherton, awilliamatherton).
+//sameperson(aeddiejemison, aeddiejemison).
+//sameperson(amarkgantt, amarkgantt).
+//sameperson(apaullnolan, apaullnolan).
+//sameperson(alorigalinski, alorigalinski).
+//sameperson(afredward, afredward).
+//sameperson(apetergallagher, apetergallagher).
+//sameperson(agretascacchi, agretascacchi).
+//sameperson(adenzelwashington, adenzelwashington).
+//sameperson(atimothypaulperez, atimothypaulperez).
+//sameperson(acarolflorence, acarolflorence).
+//sameperson(apakulaalanj, apakulaalanj).
+//sameperson(aanthonyheald, aanthonyheald).
+//sameperson(alylelovett, alylelovett).
+//sameperson(awhoopigoldberg, awhoopigoldberg).

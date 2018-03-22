@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+(courseta(A, B, -0.01952308131120257) :- courseprof(A, B), faculty(B), project(_, B)).

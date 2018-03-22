@@ -1,0 +1,51 @@
+actor(person)
+movie(movie, person)
+female_gender(person)
+genre(person, genre)
+addList(willlist, willnumber)
+multiplyList(willlist, willnumber)
+abs(willnumber, willnumber)
+minus(willnumber, willnumber)
+plus(willnumber, willnumber, willnumber)
+minus(willnumber, willnumber, willnumber)
+mult(willnumber, willnumber, willnumber)
+div(willnumber, willnumber, willnumber)
+allNumbers(willlist)
+positiveNumber(willnumber)
+negativeNumber(willnumber)
+in0toDot001(willnumber)
+in0toDot01(willnumber)
+in0toDot1(willnumber)
+in0to1(willnumber)
+in0to10(willnumber)
+in0to100(willnumber)
+in0to1000(willnumber)
+equalWithTolerance(willnumber, willnumber, willnumber)
+greaterOrEqualDifference(willnumber, willnumber, willnumber)
+smallerOrEqualDifference(willnumber, willnumber, willnumber)
+isaEqualTolerance(willnumber)
+lessThan(willnumber, willnumber)
+greaterThan(willnumber, willnumber)
+lessThanOrEqual(willnumber, willnumber)
+greaterThanOrEqual(willnumber, willnumber)
+inBetweenOO(willnumber, willnumber, willnumber)
+inBetweenCO(willnumber, willnumber, willnumber)
+inBetweenOC(willnumber, willnumber, willnumber)
+inBetweenCC(willnumber, willnumber, willnumber)
+memberOfList(willanything, willlist)
+firstInList(willlist, willanything)
+restOfList(willlist, willlist)
+positionInList(willanything, willlist, willnumber)
+nthInList(willnumber, willlist, willanything)
+lengthOfList(willlist, willnumber)
+workedunder(person, person)
+-0.2168 workedunder(a, b) v !actor(b) v !movie(c, a) v !movie(c, b) /*  */
+-0.1757 workedunder(a, _) v !female_gender(a) /*  */
+-0.1048 workedunder(a, b) v !actor(b) v !female_gender(b) v !actor(a) /*  */
+-0.1252 workedunder(a, b) v !actor(b) v !genre(a, "acomedy") /*  */
+0.5452 workedunder(a, b) v !genre(b, _) v !movie(c, a) v !movie(c, b) /*  */
+-0.2106 workedunder(a, b) v !actor(b) v !actor(a) /*  */
+-0.1432 workedunder(_, a) v !female_gender(a) /*  */
+-0.2595 workedunder(_, a) v !actor(a) v !female_gender(a) /*  */
+-0.2378 workedunder(a, b) v !actor(b) v !female_gender(b) v !female_gender(a) /*  */
+-0.2730 workedunder(a, _) v !actor(a) /*  */

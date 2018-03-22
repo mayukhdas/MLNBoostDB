@@ -1,0 +1,158 @@
+% Running on host: Beast
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[Datasets\IMDB\test1/test1_pos.txt, Datasets\IMDB\test1/test1_neg.txt, Datasets\IMDB\test1/test1_bk.txt, Datasets\IMDB\test1/test1_facts.txt]
+%  for N=0: args[N]=Datasets\IMDB\test1/test1_pos.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\IMDB\test1/test1_pos.txt, Datasets\IMDB\test1/test1_neg.txt, Datasets\IMDB\test1/test1_bk.txt, Datasets\IMDB\test1/test1_facts.txt]
+%  for N=1: args[N]=Datasets\IMDB\test1/test1_neg.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\IMDB\test1/test1_pos.txt, Datasets\IMDB\test1/test1_neg.txt, Datasets\IMDB\test1/test1_bk.txt, Datasets\IMDB\test1/test1_facts.txt]
+%  for N=2: args[N]=Datasets\IMDB\test1/test1_bk.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\IMDB\test1/test1_pos.txt, Datasets\IMDB\test1/test1_neg.txt, Datasets\IMDB\test1/test1_bk.txt, Datasets\IMDB\test1/test1_facts.txt]
+%  for N=3: args[N]=Datasets\IMDB\test1/test1_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../WILL_BK_IMDB.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []
+% [ LazyGroundClauseIndex ]  Building full index for sameAs/2 with 2 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for exp/3.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for log/3.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 212 facts.
+% Have read 0 examples from 'Datasets\IMDB\test1' [Datasets\IMDB\test1/test1*].
+% Have read 0 examples from 'Datasets\IMDB\test1' [Datasets\IMDB\test1/test1*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+
+***** Warning: targetPredicates=null *****
+
+
+***** Warning: targetArgSpecs=null *****
+
+% Time to collect constants: 21 milliseconds
+% Time to collect examples: 0 seconds
+
+% ***** Severe Warning: Have ZERO negative examples!  Variable 'minNumberOfNegExamples' is currently set to 10. *****
+
+
+% Read 0 pos examples and 0 neg examples.
+% Time to init learnOneClause: 24 milliseconds
+% Old dirDatasets/IMDB/WILL_model/
+
+% Have 0 'raw' positive examples and kept 0.
+% Have 0 'raw' negative examples and kept 0.
+% No pos ex for workedunder
+% No neg ex for workedunder
+
+% NEW target:                 workedunder(D, E)
+%  targetPredicateSignatures: [const, const]
+%  targetPred:                workedunder/2
+%  targetArgTypes:            signature = [const, const], types = [+person, -person]
+%  targets:                   [workedunder(D, E)]
+%  targetPredicates:          [workedunder/2]
+%  targetArgSpecs:            [[D[+person], E[-person]]]
+%  variablesInTargets:        [[D, E]]
+Creating neg ex for: workedunder
+%   Have considered 1,000 possible negative examples for null.null.
+%   Have randomly created 1,000 putative negative examples.
+%   Have considered 2,000 possible negative examples for null.null.
+%   Have randomly created 2,000 putative negative examples.
+%   Have considered 3,000 possible negative examples for null.null.
+%   Have randomly created 3,000 putative negative examples.
+
+% Target variant already exists.  Skipping target:                 workedunder(F, G).
+%  examplePredicateSignatures: [const, const]
+%  targetArgTypes:            signature = [const, const], types = [+person, -person]
+%  targetArgSpecs:            [[D[+person], E[-person]]]
+
+% processing backup's for workedunder
+%  POS EX = 56
+%  NEG EX = 3,308
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 1
+%  |addedToFactBase|   = 0
+File: Datasets\IMDB\test1/advice.txt doesnt exist.Hence no advice loaded
+
+% for workedunder |lookupPos| = 56
+% for workedunder |lookupNeg| = 3,308
+% getJointExamples: |pos| = 56, |neg| = 3,308
+
+% Starting inference in bRDN.
+
+% Subsampling the negative examples.
+% Trees = 20
+% [ LazyGroundClauseIndex ]  Building full index for actor/1 with 55 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for female_gender/1 with 26 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for genre/2.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for movie/2.
+% [ LazyGroundClauseIndex ]  Building full index for movie/2 with 64 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for genre/2 with 11 assertions.
+ (Arithmetic) Mean Probability Assigned to Correct Output Class: 3,109.161/3,364.00 = 0.924245
+
+ The weighted count of positive examples = 56.000 and the weighted count of negative examples = 3,308.000
+
+printExamples: Writing out predictions (for Tuffy?) on 3,364 examples for 'workedunder' to:
+  Datasets\IMDB\test1/results_workedunder.db
+ and to:
+  Datasets\IMDB\test1/query_workedunder.db
+%    No need to compress since small: Datasets\IMDB\test1/query_workedunder.db
+
+% Computing Area Under Curves.
+%Pos=56
+%Neg=3308
+%LL:-39.23796981481593
+%LL:-279.3653464025585
+
+% Running command: java -jar ./libs/auc.jar Datasets\IMDB\test1/AUC/aucTemp.txt list 0.0
+% WAITING FOR command: java -jar ./libs/auc.jar Datasets\IMDB\test1/AUC/aucTemp.txt list 0.0
+% DONE WAITING FOR command: java -jar ./libs/auc.jar Datasets\IMDB\test1/AUC/aucTemp.txt list 0.0
+% F1 = 1.0
+% Threshold = 0.34465176666545605
+
+%   AUC ROC   = 0.999385
+%   AUC PR    = 0.917490
+%   CLL	      = -0.083046
+%   Precision = 0.962963 at threshold = 0.500
+%   Recall    = 0.464286
+%   F1        = 0.626506
+
+% Total inference time (20 trees): 1.567 seconds.

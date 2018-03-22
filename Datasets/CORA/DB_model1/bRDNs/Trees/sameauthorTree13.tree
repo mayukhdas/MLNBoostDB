@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+(sameauthor(A, B, 1.2029320406691784E-5) :- author(C, A), haswordauthor(A, D), samebib(C, E)).

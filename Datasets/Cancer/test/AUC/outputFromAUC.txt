@@ -1,0 +1,10 @@
+0.9442861447766393 1
+0.9442861447766393 1
+0.14185106490048777 0
+0.14185106490048777 0
+--- Writing PR file Datasets\Cancer\test/AUC/aucTemp.txt.pr ---
+--- Writing standardized PR file Datasets\Cancer\test/AUC/aucTemp.txt.spr ---
+--- Writing ROC file Datasets\Cancer\test/AUC/aucTemp.txt.roc ---
+Area Under the Curve for Precision - Recall is 1.0
+Area Under the Curve for ROC is 1.0
+

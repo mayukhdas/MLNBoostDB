@@ -1,0 +1,4 @@
+mode: friends(+Person, -Person).
+mode: friends(-Person, +Person).
+mode: smokes(+Person).
+mode: cancer(+Person).

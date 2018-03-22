@@ -1,0 +1,27 @@
+// BK file follows assumption that each predicate name is unique
+// Options for the ILP search:
+option(M) = 20. 		// Number of gradient steps
+option(CM) = 3. 	// Number of clauses learned for each target per gradient step
+option(N) = 3.  	// Maximum length of a clause
+option(B) = 10.		// Beam size
+
+// Predicate definitions:
+predDef: actor(person).
+predDef: movie(movie,person).
+predDef: female_gender(person).
+predDef: genre(person,genre).
+predDef: workedunder(person,person).
+
+// Which predicates are query:
+query: workedunder.
+
+// Mode definitions:
+mode: actor(+).
+mode: movie(+, -).
+mode: movie(-, +).
+mode: female_gender(+).
+//mode: genre(+, #).
+mode: genre(+, -).
+mode: genre(-, +).
+mode: workedunder(+, -).
+mode: workedunder(-, +).

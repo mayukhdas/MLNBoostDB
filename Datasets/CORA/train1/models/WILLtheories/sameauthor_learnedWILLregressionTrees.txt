@@ -1,0 +1,515 @@
+usePrologVariables: true.
+
+% maxTreeDepthInNodes                 = 5
+% maxTreeDepthInLiterals              = 12
+% maxNumberOfLiteralsAtAnInteriorNode = 1
+% maxFreeBridgersInBody               = 1
+% maxNumberOfClauses                  = 12
+% maxNodesToConsider                  = 10
+% maxNodesToCreate                    = 10,000
+% maxAcceptableNodeScoreToStop        = 0.003
+% negPosRatio                         = 2.000
+% testNegPosRatio                     = -1.000
+% # of pos examples                   = 1,820
+% # of neg examples                   = 0
+
+
+
+%%%%%  WILL-Produced Tree #1 @ 9:00:00 11/12/15.  [Using 9,308,112 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.18946761641818863;  // std dev = 0.471, 1,820.000 (wgt'ed) examples reached here.  /* #neg=1,217 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.18946761641818863) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.18946761641818863) :-  /* #neg=1,217 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #2 @ 9:00:01 11/12/15.  [Using 9,399,080 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.16998082347749593;  // std dev = 0.473, 1,792.000 (wgt'ed) examples reached here.  /* #neg=1,189 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.16998082347749593) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.16998082347749593) :-  /* #neg=1,189 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #3 @ 9:00:01 11/12/15.  [Using 9,362,712 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.13430990328193249;  // std dev = 0.469, 1,851.000 (wgt'ed) examples reached here.  /* #neg=1,248 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.13430990328193249) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.13430990328193249) :-  /* #neg=1,248 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #4 @ 9:00:01 11/12/15.  [Using 9,368,432 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.11513615523203673;  // std dev = 0.470, 1,837.000 (wgt'ed) examples reached here.  /* #neg=1,234 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.11513615523203673) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.11513615523203673) :-  /* #neg=1,234 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #5 @ 9:00:02 11/12/15.  [Using 9,366,784 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.09825740532083933;  // std dev = 0.471, 1,820.000 (wgt'ed) examples reached here.  /* #neg=1,217 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.09825740532083933) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.09825740532083933) :-  /* #neg=1,217 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #6 @ 9:00:02 11/12/15.  [Using 9,363,720 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.08578916559395323;  // std dev = 0.473, 1,790.000 (wgt'ed) examples reached here.  /* #neg=1,187 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.08578916559395323) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.08578916559395323) :-  /* #neg=1,187 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #7 @ 9:00:02 11/12/15.  [Using 9,361,096 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.07139865172860205;  // std dev = 0.473, 1,779.000 (wgt'ed) examples reached here.  /* #neg=1,176 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.07139865172860205) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.07139865172860205) :-  /* #neg=1,176 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #8 @ 9:00:03 11/12/15.  [Using 9,366,680 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.04809093004085249;  // std dev = 0.470, 1,828.000 (wgt'ed) examples reached here.  /* #neg=1,225 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.04809093004085249) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.04809093004085249) :-  /* #neg=1,225 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #9 @ 9:00:03 11/12/15.  [Using 9,376,728 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.03468701824043909;  // std dev = 0.469, 1,848.000 (wgt'ed) examples reached here.  /* #neg=1,245 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.03468701824043909) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.03468701824043909) :-  /* #neg=1,245 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #10 @ 9:00:04 11/12/15.  [Using 9,385,984 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.03395288430749965;  // std dev = 0.471, 1,812.000 (wgt'ed) examples reached here.  /* #neg=1,209 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.03395288430749965) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.03395288430749965) :-  /* #neg=1,209 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #11 @ 9:00:04 11/12/15.  [Using 9,382,384 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.034494645396803046;  // std dev = 0.474, 1,771.000 (wgt'ed) examples reached here.  /* #neg=1,168 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.034494645396803046) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.034494645396803046) :-  /* #neg=1,168 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #12 @ 9:00:04 11/12/15.  [Using 10,746,960 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.015066499655529123;  // std dev = 0.470, 1,836.000 (wgt'ed) examples reached here.  /* #neg=1,233 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.015066499655529123) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.015066499655529123) :-  /* #neg=1,233 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #13 @ 9:00:04 11/12/15.  [Using 10,272,064 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.02233869758694889;  // std dev = 0.473, 1,779.000 (wgt'ed) examples reached here.  /* #neg=1,176 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.02233869758694889) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.02233869758694889) :-  /* #neg=1,176 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #14 @ 9:00:05 11/12/15.  [Using 9,964,920 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.004829821809171116;  // std dev = 0.469, 1,848.000 (wgt'ed) examples reached here.  /* #neg=1,245 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.004829821809171116) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.004829821809171116) :-  /* #neg=1,245 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #15 @ 9:00:05 11/12/15.  [Using 9,394,160 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.010074604590037381;  // std dev = 0.471, 1,813.000 (wgt'ed) examples reached here.  /* #neg=1,210 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.010074604590037381) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.010074604590037381) :-  /* #neg=1,210 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #16 @ 9:00:05 11/12/15.  [Using 9,635,632 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.007137167471595561;  // std dev = 0.471, 1,817.000 (wgt'ed) examples reached here.  /* #neg=1,214 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.007137167471595561) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.007137167471595561) :-  /* #neg=1,214 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #17 @ 9:00:05 11/12/15.  [Using 9,416,592 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return -0.008592691196132948;  // std dev = 0.466, 1,898.000 (wgt'ed) examples reached here.  /* #neg=1,295 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, -0.008592691196132948) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, -0.008592691196132948) :-  /* #neg=1,295 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #18 @ 9:00:06 11/12/15.  [Using 9,418,264 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.007091365050142705;  // std dev = 0.471, 1,819.000 (wgt'ed) examples reached here.  /* #neg=1,216 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.007091365050142705) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.007091365050142705) :-  /* #neg=1,216 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #19 @ 9:00:06 11/12/15.  [Using 9,417,576 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.005353090576253832;  // std dev = 0.471, 1,820.000 (wgt'ed) examples reached here.  /* #neg=1,217 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.005353090576253832) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.005353090576253832) :-  /* #neg=1,217 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+%%%%%  WILL-Produced Tree #20 @ 9:00:06 11/12/15.  [Using 9,417,072 memory cells.]  %%%%%
+
+% FOR sameauthor(A, B):
+%   return 0.0074853678650355126;  // std dev = 0.472, 1,802.000 (wgt'ed) examples reached here.  /* #neg=1,199 #pos=603 */
+
+
+% Clauses:
+
+sameauthor(A, B, 0.0074853678650355126) :- !. // Clause #1.
+
+
+% The flattened versions of these clauses:
+
+flattened_sameauthor(underscore, underscore, 0.0074853678650355126) :-  /* #neg=1,199 #pos=603 */ 
+   !. // Flattened version of clause #1.
+
+
+% The unique flattened literals:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for sameauthor.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+sameauthor(D, E, Total) :- // A general accessor. 
+   sameauthor(D, E, 1000000, Total), !.
+sameauthor(D, E, Total) :- waitHere("This should not fail", sameauthor(D, E, Total)).
+
+sameauthor(D, E, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_sameauthor_tree1(D, E, TreesToUse, Total1),
+   getScore_sameauthor_tree2(D, E, TreesToUse, Total2),
+   getScore_sameauthor_tree3(D, E, TreesToUse, Total3),
+   getScore_sameauthor_tree4(D, E, TreesToUse, Total4),
+   getScore_sameauthor_tree5(D, E, TreesToUse, Total5),
+   getScore_sameauthor_tree6(D, E, TreesToUse, Total6),
+   getScore_sameauthor_tree7(D, E, TreesToUse, Total7),
+   getScore_sameauthor_tree8(D, E, TreesToUse, Total8),
+   getScore_sameauthor_tree9(D, E, TreesToUse, Total9),
+   getScore_sameauthor_tree10(D, E, TreesToUse, Total10),
+   getScore_sameauthor_tree11(D, E, TreesToUse, Total11),
+   getScore_sameauthor_tree12(D, E, TreesToUse, Total12),
+   getScore_sameauthor_tree13(D, E, TreesToUse, Total13),
+   getScore_sameauthor_tree14(D, E, TreesToUse, Total14),
+   getScore_sameauthor_tree15(D, E, TreesToUse, Total15),
+   getScore_sameauthor_tree16(D, E, TreesToUse, Total16),
+   getScore_sameauthor_tree17(D, E, TreesToUse, Total17),
+   getScore_sameauthor_tree18(D, E, TreesToUse, Total18),
+   getScore_sameauthor_tree19(D, E, TreesToUse, Total19),
+   getScore_sameauthor_tree20(D, E, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+sameauthor(D, E, TreesToUse, Total) :- waitHere("This should not fail", sameauthor(D, E, TreesToUse, Total)).
+
+getScore_sameauthor_tree1(D, E, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_sameauthor_tree1(D, E, TreesToUse, Total1) :- sameauthor_tree1(D, E, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_sameauthor_tree2(D, E, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_sameauthor_tree2(D, E, TreesToUse, Total2) :- sameauthor_tree2(D, E, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_sameauthor_tree3(D, E, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_sameauthor_tree3(D, E, TreesToUse, Total3) :- sameauthor_tree3(D, E, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_sameauthor_tree4(D, E, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_sameauthor_tree4(D, E, TreesToUse, Total4) :- sameauthor_tree4(D, E, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_sameauthor_tree5(D, E, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_sameauthor_tree5(D, E, TreesToUse, Total5) :- sameauthor_tree5(D, E, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_sameauthor_tree6(D, E, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_sameauthor_tree6(D, E, TreesToUse, Total6) :- sameauthor_tree6(D, E, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_sameauthor_tree7(D, E, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_sameauthor_tree7(D, E, TreesToUse, Total7) :- sameauthor_tree7(D, E, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_sameauthor_tree8(D, E, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_sameauthor_tree8(D, E, TreesToUse, Total8) :- sameauthor_tree8(D, E, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_sameauthor_tree9(D, E, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_sameauthor_tree9(D, E, TreesToUse, Total9) :- sameauthor_tree9(D, E, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_sameauthor_tree10(D, E, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_sameauthor_tree10(D, E, TreesToUse, Total10) :- sameauthor_tree10(D, E, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_sameauthor_tree11(D, E, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_sameauthor_tree11(D, E, TreesToUse, Total11) :- sameauthor_tree11(D, E, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_sameauthor_tree12(D, E, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_sameauthor_tree12(D, E, TreesToUse, Total12) :- sameauthor_tree12(D, E, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_sameauthor_tree13(D, E, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_sameauthor_tree13(D, E, TreesToUse, Total13) :- sameauthor_tree13(D, E, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_sameauthor_tree14(D, E, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_sameauthor_tree14(D, E, TreesToUse, Total14) :- sameauthor_tree14(D, E, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_sameauthor_tree15(D, E, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_sameauthor_tree15(D, E, TreesToUse, Total15) :- sameauthor_tree15(D, E, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_sameauthor_tree16(D, E, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_sameauthor_tree16(D, E, TreesToUse, Total16) :- sameauthor_tree16(D, E, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_sameauthor_tree17(D, E, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_sameauthor_tree17(D, E, TreesToUse, Total17) :- sameauthor_tree17(D, E, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_sameauthor_tree18(D, E, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_sameauthor_tree18(D, E, TreesToUse, Total18) :- sameauthor_tree18(D, E, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_sameauthor_tree19(D, E, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_sameauthor_tree19(D, E, TreesToUse, Total19) :- sameauthor_tree19(D, E, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_sameauthor_tree20(D, E, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_sameauthor_tree20(D, E, TreesToUse, Total20) :- sameauthor_tree20(D, E, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(0, []).

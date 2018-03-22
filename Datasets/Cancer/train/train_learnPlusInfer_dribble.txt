@@ -1,0 +1,2395 @@
+% Running on host: Beast
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[Datasets\Cancer\train/train_pos.txt, Datasets\Cancer\train/train_neg.txt, Datasets\Cancer\train/train_bk.txt, Datasets\Cancer\train/train_facts.txt]
+%  for N=0: args[N]=Datasets\Cancer\train/train_pos.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\Cancer\train/train_pos.txt, Datasets\Cancer\train/train_neg.txt, Datasets\Cancer\train/train_bk.txt, Datasets\Cancer\train/train_facts.txt]
+%  for N=1: args[N]=Datasets\Cancer\train/train_neg.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\Cancer\train/train_pos.txt, Datasets\Cancer\train/train_neg.txt, Datasets\Cancer\train/train_bk.txt, Datasets\Cancer\train/train_facts.txt]
+%  for N=2: args[N]=Datasets\Cancer\train/train_bk.txt
+
+% getInputArgWithDefaultValue: args=[Datasets\Cancer\train/train_pos.txt, Datasets\Cancer\train/train_neg.txt, Datasets\Cancer\train/train_bk.txt, Datasets\Cancer\train/train_facts.txt]
+%  for N=3: args[N]=Datasets\Cancer\train/train_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../WILL_BK_Cancer.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []
+% [ LazyGroundClauseIndex ]  Building full index for sameAs/2 with 2 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for exp/3.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for log/3.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 19 facts.
+% Have read 0 examples from 'Datasets\Cancer\train' [Datasets\Cancer\train/train*].
+% Have read 0 examples from 'Datasets\Cancer\train' [Datasets\Cancer\train/train*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+
+***** Warning: targetPredicates=null *****
+
+
+***** Warning: targetArgSpecs=null *****
+
+% Time to collect constants: 3 milliseconds
+% Time to collect examples: 3 milliseconds
+
+% ***** Severe Warning: Have ZERO negative examples!  Variable 'minNumberOfNegExamples' is currently set to 10. *****
+
+
+% Read 0 pos examples and 0 neg examples.
+% Time to init learnOneClause: 17 milliseconds
+% Old dirD:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/
+
+% Have 0 'raw' positive examples and kept 0.
+% Have 0 'raw' negative examples and kept 0.
+% No pos ex for cancer
+% No neg ex for cancer
+
+% NEW target:                 cancer(D)
+%  targetPredicateSignatures: [const]
+%  targetPred:                cancer/1
+%  targetArgTypes:            signature = [const], types = [+Person]
+%  targets:                   [cancer(D)]
+%  targetPredicates:          [cancer/1]
+%  targetArgSpecs:            [[D[+Person]]]
+%  variablesInTargets:        [[D]]
+Creating neg ex for: cancer
+
+% Target variant already exists.  Skipping target:                 cancer(E).
+%  examplePredicateSignatures: [const]
+%  targetArgTypes:            signature = [const], types = [+Person]
+%  targetArgSpecs:            [[D[+Person]]]
+
+% processing backup's for cancer
+%  POS EX = 4
+%  NEG EX = 2
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 1
+%  |addedToFactBase|   = 0
+D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/
+File: Datasets\Cancer\train/advice.txt doesnt exist.Hence no advice loaded
+% Learning 20 trees in this iteration for cancer
+
+% Learn model for: cancer
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:1 milliseconds
+Time to build dataset: 1 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #5 as the next seed: cancer(earl)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% LearnOneClause Parameters:
+%   Targets (1):
+%    cancer(+Person)
+%  Modes (39):
+%    friends(+Person, -Person),
+%    friends(-Person, +Person),
+%    smokes(+Person),
+%    addList(+willList, #willNumber),
+%    multiplyList(+willList, #willNumber),
+%    abs(+willNumber, &willNumber),
+%    minus(+willNumber, &willNumber),
+%    minus(+willNumber, +willNumber, &willNumber),
+%    plus(+willNumber, +willNumber, &willNumber),
+%    mult(+willNumber, +willNumber, &willNumber),
+%    div(+willNumber, +willNumber, &willNumber),
+%    allNumbers(+willList),
+%    positiveNumber(+willNumber),
+%    negativeNumber(+willNumber),
+%    in0toDot001(+willNumber),
+%    in0toDot01(+willNumber),
+%    in0toDot1(+willNumber),
+%    in0to1(+willNumber),
+%    in0to10(+willNumber),
+%    in0to100(+willNumber),
+%    in0to1000(+willNumber),
+%    equalWithTolerance(+willNumber, +willNumber, &willNumber),
+%    greaterOrEqualDifference(+willNumber, +willNumber, &willNumber),
+%    smallerOrEqualDifference(+willNumber, +willNumber, &willNumber),
+%    isaEqualTolerance(+willNumber),
+%    lessThan(+willNumber, +willNumber),
+%    greaterThan(+willNumber, +willNumber),
+%    lessThanOrEqual(+willNumber, +willNumber),
+%    greaterThanOrEqual(+willNumber, +willNumber),
+%    inBetweenOO(+willNumber, +willNumber, +willNumber),
+%    inBetweenCO(+willNumber, +willNumber, +willNumber),
+%    inBetweenOC(+willNumber, +willNumber, +willNumber),
+%    inBetweenCC(+willNumber, +willNumber, +willNumber),
+%    memberOfList(+willAnything, +willList),
+%    firstInList(+willList, &willAnything),
+%    restOfList(+willList, &willList),
+%    positionInList(+willAnything, +willList, &willNumber),
+%    nthInList(+willNumber, +willList, &willAnything),
+%    lengthOfList(+willList, &willNumber)
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 1 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+% [ LazyGroundClauseIndex ]  Building full index for friends/2 with 12 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for friends/2.
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 5 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for friends/2.
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+% [ LazyGroundClauseIndex ]  Building full index for smokes/1 with 3 assertions.
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -2.985922): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-2.9859218284765126
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 18 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 8 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 7 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 4 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 38 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 8 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.8581489350995121 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-2.99 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.8581489350995121 to wgt = 0.8581 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 1 trees is 189 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:1 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #1 as the next seed: cancer(bob)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 55 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -2.329589): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-2.329589016674654
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 8 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 5 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 24 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 5 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 17 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.7194734122109545 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-2.33 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.7194734122109545 to wgt = 0.7195 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 2 trees is 306 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:2 milliseconds
+Time to build dataset: 3 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #5 as the next seed: cancer(earl)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 44 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -1.701959): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-1.7019586812320262
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 9 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 3 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 20 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 11 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 3 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.5553664367462845 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-1.70 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.5553664367462845 to wgt = 0.5554 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 3 trees is 468 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:26 milliseconds
+Time to build dataset: 26 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #0 as the next seed: cancer(alice)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 126 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -1.299616): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-1.2996158229093862
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 5 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 23 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.41751358415830997 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-1.30 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.41751358415830997 to wgt = 0.4175 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 4 trees is 586 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:4 milliseconds
+Time to build dataset: 5 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #0 as the next seed: cancer(alice)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 49 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -1.085231): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-1.0852313107658573
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 5 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 5 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 10 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 21 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.32071184716014967 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-1.09 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.32071184716014967 to wgt = 0.3207 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 5 trees is 688 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:9 milliseconds
+Time to build dataset: 10 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #3 as the next seed: cancer(fred)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 56 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 13 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.972002): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.9720016641730588
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 24 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 2 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 16 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 3 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.25517224256948945 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.97 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.25517224256948945 to wgt = 0.2552 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 6 trees is 851 milliseconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:91 milliseconds
+Time to build dataset: 93 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #1 as the next seed: cancer(bob)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 176 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.908658): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.9086579418413706
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 5 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 6 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 3 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 25 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.20975771563253554 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.91 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.20975771563253554 to wgt = 0.2098 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 7 trees is 1.045 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:3 milliseconds
+Time to build dataset: 3 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #0 as the next seed: cancer(alice)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 53 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.870753): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8707525525801608
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.17709649774527736 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.87 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.17709649774527736 to wgt = 0.1771 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 8 trees is 1.120 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:5 milliseconds
+Time to build dataset: 6 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #1 as the next seed: cancer(bob)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 53 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.846655): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8466551025952502
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 8 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 10 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.15274385809367097 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.85 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.15274385809367097 to wgt = 0.1527 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 9 trees is 1.186 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:14 milliseconds
+Time to build dataset: 14 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #1 as the next seed: cancer(bob)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 43 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.830537): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8305366963139357
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 17 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 5 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.13400703000801117 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.83 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.13400703000801117 to wgt = 0.1340 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model
+% Time taken to learn 10 trees is 1.322 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:4 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #3 as the next seed: cancer(fred)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 84 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.819292): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8192916877297529
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 2 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 16 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 9 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.11920380823128263 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.82 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.11920380823128263 to wgt = 0.1192 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 11 trees is 1.416 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:11 milliseconds
+Time to build dataset: 12 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #3 as the next seed: cancer(fred)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 65 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.811168): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8111675685019261
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 27 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 9 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.10724508452246873 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.81 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.10724508452246873 to wgt = 0.1072 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 12 trees is 1.549 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:3 milliseconds
+Time to build dataset: 3 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #5 as the next seed: cancer(earl)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 71 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.805124): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8051239829277534
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 10 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 5 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 4 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 17 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 8 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.09740112745501073 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.81 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.09740112745501073 to wgt = 0.0974 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 13 trees is 1.649 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:3 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #4 as the next seed: cancer(dan)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 49 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.800516): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.8005156085520666
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 5 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 4 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 15 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.0891675660630683 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.80 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.0891675660630683 to wgt = 0.0892 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 14 trees is 1.723 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:4 milliseconds
+Time to build dataset: 5 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #4 as the next seed: cancer(dan)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 42 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.796927): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7969266835869064
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 11 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 4 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.08218604818271513 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.80 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.08218604818271513 to wgt = 0.0822 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 15 trees is 1.899 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:3 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #3 as the next seed: cancer(fred)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 143 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.794080): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7940803990402578
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 2 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 15 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 26 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.0761957019807683 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.79 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.0761957019807683 to wgt = 0.0762 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 16 trees is 2.001 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:2 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #1 as the next seed: cancer(bob)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 44 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.791787): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7917871108619182
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 2 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 8 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.07100250423444365 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.79 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.07100250423444365 to wgt = 0.0710 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 17 trees is 2.078 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:3 milliseconds
+Time to build dataset: 4 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #4 as the next seed: cancer(dan)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 56 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.789914): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7899135951132418
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 2 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 7 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 18 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 3 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.06645938878746438 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.79 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.06645938878746438 to wgt = 0.0665 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 18 trees is 2.184 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:7 milliseconds
+Time to build dataset: 9 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #4 as the next seed: cancer(dan)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 76 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 4 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.788364): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7883641718746853
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 4 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 8 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 5 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 2 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.06245298988159975 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.79 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.06245298988159975 to wgt = 0.0625 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Time taken to learn 19 trees is 2.333 seconds.
+
+% Kept 4 of the 4 positive examples.
+% Kept 2 of the 2 negative examples.
+% Dataset size: 6
+Computing probabilities
+prob time:9 milliseconds
+Time to build dataset: 12 milliseconds
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+% Have selected pos example #4 as the next seed: cancer(dan)
+% [AdviceProcessor]  Generated 0 clauses at relevance level STRONGLY_IRRELEVANT.
+
+% target           = cancer(D)
+% Unacceptable due to being the root node.
+% Most-general root: cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]  score = -Infinity
+
+% Consider expanding [#1 of outerLoop #1, bodyLen=0] 'cancer(_).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 118 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 3 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 1, |OPEN| = 0.  Pruned 1 variant children.  Sending 4 items to OPEN for evaluation and possible insertion.
+% Have created 4 valid-on-seeds descendants.
+% Gleaner: New best node found (score = -0.787069): cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% Consider expanding [#2 of outerLoop #1, bodyLen=1] 'cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]' score=-0.7870687649325897
+
+% |allArgPossibilities| = 2 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 2 |children| = 2    Was last here 0 seconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 2
+
+% |allArgPossibilities| = 1 |children| = 3    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 1
+%  At # nodes expanded = 2, |OPEN| = 3.  Pruned 1 variant children.  Sending 3 items to OPEN for evaluation and possible insertion.
+% Have created 3 valid-on-seeds descendants.
+
+% Consider expanding [#3 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, A).  [covers 0.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% Consider expanding [#4 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(A, _).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 3 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 1 milliseconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 4, |OPEN| = 1.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% Consider expanding [#5 of outerLoop #1, bodyLen=1] 'cancer(A) :- friends(_, A).  [covers 6.0/6.0 pos, 0.0/0.0 neg]' score=-Infinity
+
+% |allArgPossibilities| = 6 |children| = 0    Was last here 17 milliseconds ago.
+%    friends/2 [+Person, -Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 6 |children| = 5    Was last here 1 milliseconds ago.
+%    friends/2 [-Person, +Person]
+%    |allArgPossibilities2| = 6
+
+% |allArgPossibilities| = 2 |children| = 7    Was last here 0 seconds ago.
+%    smokes/1 [+Person]
+%    |allArgPossibilities2| = 2
+%  At # nodes expanded = 5, |OPEN| = 0.  Pruned 3 variant children.  Sending 9 items to OPEN for evaluation and possible insertion.
+% Have created 9 valid-on-seeds descendants.
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+Setting 0.05889459763950633 for 
+ // Learned this clause on outer loop cycle #1.  It scores=-0.79 and has recall=0.49, precision=0.97, and F1=0.65 (using m-estimates).
+ // It covers 50.0% of the positive examples, 3 of 6,
+(cancer(D) :- smokes(D))
+
+% On cycle #1, the best clause found is:
+%      cancer(A) :- smokes(A).  [covers 3.0/6.0 pos, 0.0/0.0 neg]
+% This clause covers 3 positive examples, of which 3 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 50.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have reached the maximum number of iterations (1).
+
+% ******************************************
+adding regression values
+Added 0.05889459763950633 to wgt = 0.0589 (cancer(A) :- smokes(A))
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model.ckpt
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for cancer.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+cancer(D, Total) :- // A general accessor. 
+   cancer(D, 1000000, Total), !.
+cancer(D, Total) :- waitHere("This should not fail", cancer(D, Total)).
+
+cancer(D, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_cancer_tree1(D, TreesToUse, Total1),
+   getScore_cancer_tree2(D, TreesToUse, Total2),
+   getScore_cancer_tree3(D, TreesToUse, Total3),
+   getScore_cancer_tree4(D, TreesToUse, Total4),
+   getScore_cancer_tree5(D, TreesToUse, Total5),
+   getScore_cancer_tree6(D, TreesToUse, Total6),
+   getScore_cancer_tree7(D, TreesToUse, Total7),
+   getScore_cancer_tree8(D, TreesToUse, Total8),
+   getScore_cancer_tree9(D, TreesToUse, Total9),
+   getScore_cancer_tree10(D, TreesToUse, Total10),
+   getScore_cancer_tree11(D, TreesToUse, Total11),
+   getScore_cancer_tree12(D, TreesToUse, Total12),
+   getScore_cancer_tree13(D, TreesToUse, Total13),
+   getScore_cancer_tree14(D, TreesToUse, Total14),
+   getScore_cancer_tree15(D, TreesToUse, Total15),
+   getScore_cancer_tree16(D, TreesToUse, Total16),
+   getScore_cancer_tree17(D, TreesToUse, Total17),
+   getScore_cancer_tree18(D, TreesToUse, Total18),
+   getScore_cancer_tree19(D, TreesToUse, Total19),
+   getScore_cancer_tree20(D, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+cancer(D, TreesToUse, Total) :- waitHere("This should not fail", cancer(D, TreesToUse, Total)).
+
+getScore_cancer_tree1(D, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_cancer_tree1(D, TreesToUse, Total1) :- cancer_tree1(D, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_cancer_tree2(D, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_cancer_tree2(D, TreesToUse, Total2) :- cancer_tree2(D, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_cancer_tree3(D, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_cancer_tree3(D, TreesToUse, Total3) :- cancer_tree3(D, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_cancer_tree4(D, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_cancer_tree4(D, TreesToUse, Total4) :- cancer_tree4(D, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_cancer_tree5(D, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_cancer_tree5(D, TreesToUse, Total5) :- cancer_tree5(D, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_cancer_tree6(D, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_cancer_tree6(D, TreesToUse, Total6) :- cancer_tree6(D, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_cancer_tree7(D, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_cancer_tree7(D, TreesToUse, Total7) :- cancer_tree7(D, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_cancer_tree8(D, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_cancer_tree8(D, TreesToUse, Total8) :- cancer_tree8(D, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_cancer_tree9(D, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_cancer_tree9(D, TreesToUse, Total9) :- cancer_tree9(D, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_cancer_tree10(D, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_cancer_tree10(D, TreesToUse, Total10) :- cancer_tree10(D, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_cancer_tree11(D, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_cancer_tree11(D, TreesToUse, Total11) :- cancer_tree11(D, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_cancer_tree12(D, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_cancer_tree12(D, TreesToUse, Total12) :- cancer_tree12(D, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_cancer_tree13(D, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_cancer_tree13(D, TreesToUse, Total13) :- cancer_tree13(D, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_cancer_tree14(D, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_cancer_tree14(D, TreesToUse, Total14) :- cancer_tree14(D, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_cancer_tree15(D, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_cancer_tree15(D, TreesToUse, Total15) :- cancer_tree15(D, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_cancer_tree16(D, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_cancer_tree16(D, TreesToUse, Total16) :- cancer_tree16(D, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_cancer_tree17(D, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_cancer_tree17(D, TreesToUse, Total17) :- cancer_tree17(D, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_cancer_tree18(D, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_cancer_tree18(D, TreesToUse, Total18) :- cancer_tree18(D, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_cancer_tree19(D, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_cancer_tree19(D, TreesToUse, Total19) :- cancer_tree19(D, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_cancer_tree20(D, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_cancer_tree20(D, TreesToUse, Total20) :- cancer_tree20(D, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(0, []).
+% Time taken to learn model for 'cancer': 2.462 seconds.
+% Saving model in: D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/bRDNs/cancer.model
+cached groundings hit: 0
+Misses: 0
+
+% Switching to standard-logic notation for variables; previous setting = uppercase
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Total learning time (20 trees): 2.853 seconds.
+
+
+// Closed by a createDribble call with file = D:\Dropbox\Research\SRL\MLN_Boostg\MLNBoost\Datasets\Cancer\WILL_model/test_learnPlusInfer_dribble.txt

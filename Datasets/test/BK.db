@@ -1,0 +1,22 @@
+// BK file follows assumption that each predicate name is unique
+// Options for the ILP search:
+option(M) = 1. 		// Number of gradient steps
+option(CM) = 1. 	// Number of clauses learned for each target per gradient step
+option(N) = 3.  	// Maximum length of a clause
+option(B) = 5.		// Beam size
+
+// Predicate definitions:
+predDef: U(person,person).
+predDef: B(person,person).
+predDef: P(person,person).
+
+// Which predicates are query:
+query: U.
+
+// Mode definitions:
+mode: U(+,-).
+mode: U(-,+).
+mode: B(+,-).
+mode: B(-,+).
+mode: P(+,-).
+mode: P(-,+).

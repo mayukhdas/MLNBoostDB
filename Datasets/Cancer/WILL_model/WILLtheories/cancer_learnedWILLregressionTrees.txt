@@ -1,0 +1,135 @@
+usePrologVariables: true.
+
+% maxTreeDepthInNodes                 = 5
+% maxTreeDepthInLiterals              = 12
+% maxNumberOfLiteralsAtAnInteriorNode = 1
+% maxFreeBridgersInBody               = 1
+% maxNumberOfClauses                  = 1
+% maxNodesToConsider                  = 10
+% maxNodesToCreate                    = 10,000
+% maxAcceptableNodeScoreToStop        = 0.003
+% negPosRatio                         = 2.000
+% testNegPosRatio                     = -1.000
+% # of pos examples                   = 6
+% # of neg examples                   = 0
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  Final call for computing score for cancer.  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stepLength_tree1(1.0).
+stepLength_tree2(1.0).
+stepLength_tree3(1.0).
+stepLength_tree4(1.0).
+stepLength_tree5(1.0).
+stepLength_tree6(1.0).
+stepLength_tree7(1.0).
+stepLength_tree8(1.0).
+stepLength_tree9(1.0).
+stepLength_tree10(1.0).
+stepLength_tree11(1.0).
+stepLength_tree12(1.0).
+stepLength_tree13(1.0).
+stepLength_tree14(1.0).
+stepLength_tree15(1.0).
+stepLength_tree16(1.0).
+stepLength_tree17(1.0).
+stepLength_tree18(1.0).
+stepLength_tree19(1.0).
+stepLength_tree20(1.0).
+
+logPrior(-1.8).
+cancer(D, Total) :- // A general accessor. 
+   cancer(D, 1000000, Total), !.
+cancer(D, Total) :- waitHere("This should not fail", cancer(D, Total)).
+
+cancer(D, TreesToUse, Total) :- // A tree-limited accessor (e.g., for tuning the number of trees to use).
+   logPrior(LogPrior),
+   getScore_cancer_tree1(D, TreesToUse, Total1),
+   getScore_cancer_tree2(D, TreesToUse, Total2),
+   getScore_cancer_tree3(D, TreesToUse, Total3),
+   getScore_cancer_tree4(D, TreesToUse, Total4),
+   getScore_cancer_tree5(D, TreesToUse, Total5),
+   getScore_cancer_tree6(D, TreesToUse, Total6),
+   getScore_cancer_tree7(D, TreesToUse, Total7),
+   getScore_cancer_tree8(D, TreesToUse, Total8),
+   getScore_cancer_tree9(D, TreesToUse, Total9),
+   getScore_cancer_tree10(D, TreesToUse, Total10),
+   getScore_cancer_tree11(D, TreesToUse, Total11),
+   getScore_cancer_tree12(D, TreesToUse, Total12),
+   getScore_cancer_tree13(D, TreesToUse, Total13),
+   getScore_cancer_tree14(D, TreesToUse, Total14),
+   getScore_cancer_tree15(D, TreesToUse, Total15),
+   getScore_cancer_tree16(D, TreesToUse, Total16),
+   getScore_cancer_tree17(D, TreesToUse, Total17),
+   getScore_cancer_tree18(D, TreesToUse, Total18),
+   getScore_cancer_tree19(D, TreesToUse, Total19),
+   getScore_cancer_tree20(D, TreesToUse, Total20),
+   Total is LogPrior + Total1 + Total2 + Total3 + Total4 + Total5 + Total6 + Total7 + Total8 + Total9 + Total10 + Total11 + Total12 + Total13 + Total14 + Total15 + Total16 + Total17 + Total18 + Total19 + Total20,
+   !.
+cancer(D, TreesToUse, Total) :- waitHere("This should not fail", cancer(D, TreesToUse, Total)).
+
+getScore_cancer_tree1(D, TreesToUse, 0.0) :- 1 > TreesToUse, !.
+getScore_cancer_tree1(D, TreesToUse, Total1) :- cancer_tree1(D, Total), stepLength_tree1(StepLen), Total1 is Total * StepLen.
+
+getScore_cancer_tree2(D, TreesToUse, 0.0) :- 2 > TreesToUse, !.
+getScore_cancer_tree2(D, TreesToUse, Total2) :- cancer_tree2(D, Total), stepLength_tree2(StepLen), Total2 is Total * StepLen.
+
+getScore_cancer_tree3(D, TreesToUse, 0.0) :- 3 > TreesToUse, !.
+getScore_cancer_tree3(D, TreesToUse, Total3) :- cancer_tree3(D, Total), stepLength_tree3(StepLen), Total3 is Total * StepLen.
+
+getScore_cancer_tree4(D, TreesToUse, 0.0) :- 4 > TreesToUse, !.
+getScore_cancer_tree4(D, TreesToUse, Total4) :- cancer_tree4(D, Total), stepLength_tree4(StepLen), Total4 is Total * StepLen.
+
+getScore_cancer_tree5(D, TreesToUse, 0.0) :- 5 > TreesToUse, !.
+getScore_cancer_tree5(D, TreesToUse, Total5) :- cancer_tree5(D, Total), stepLength_tree5(StepLen), Total5 is Total * StepLen.
+
+getScore_cancer_tree6(D, TreesToUse, 0.0) :- 6 > TreesToUse, !.
+getScore_cancer_tree6(D, TreesToUse, Total6) :- cancer_tree6(D, Total), stepLength_tree6(StepLen), Total6 is Total * StepLen.
+
+getScore_cancer_tree7(D, TreesToUse, 0.0) :- 7 > TreesToUse, !.
+getScore_cancer_tree7(D, TreesToUse, Total7) :- cancer_tree7(D, Total), stepLength_tree7(StepLen), Total7 is Total * StepLen.
+
+getScore_cancer_tree8(D, TreesToUse, 0.0) :- 8 > TreesToUse, !.
+getScore_cancer_tree8(D, TreesToUse, Total8) :- cancer_tree8(D, Total), stepLength_tree8(StepLen), Total8 is Total * StepLen.
+
+getScore_cancer_tree9(D, TreesToUse, 0.0) :- 9 > TreesToUse, !.
+getScore_cancer_tree9(D, TreesToUse, Total9) :- cancer_tree9(D, Total), stepLength_tree9(StepLen), Total9 is Total * StepLen.
+
+getScore_cancer_tree10(D, TreesToUse, 0.0) :- 10 > TreesToUse, !.
+getScore_cancer_tree10(D, TreesToUse, Total10) :- cancer_tree10(D, Total), stepLength_tree10(StepLen), Total10 is Total * StepLen.
+
+getScore_cancer_tree11(D, TreesToUse, 0.0) :- 11 > TreesToUse, !.
+getScore_cancer_tree11(D, TreesToUse, Total11) :- cancer_tree11(D, Total), stepLength_tree11(StepLen), Total11 is Total * StepLen.
+
+getScore_cancer_tree12(D, TreesToUse, 0.0) :- 12 > TreesToUse, !.
+getScore_cancer_tree12(D, TreesToUse, Total12) :- cancer_tree12(D, Total), stepLength_tree12(StepLen), Total12 is Total * StepLen.
+
+getScore_cancer_tree13(D, TreesToUse, 0.0) :- 13 > TreesToUse, !.
+getScore_cancer_tree13(D, TreesToUse, Total13) :- cancer_tree13(D, Total), stepLength_tree13(StepLen), Total13 is Total * StepLen.
+
+getScore_cancer_tree14(D, TreesToUse, 0.0) :- 14 > TreesToUse, !.
+getScore_cancer_tree14(D, TreesToUse, Total14) :- cancer_tree14(D, Total), stepLength_tree14(StepLen), Total14 is Total * StepLen.
+
+getScore_cancer_tree15(D, TreesToUse, 0.0) :- 15 > TreesToUse, !.
+getScore_cancer_tree15(D, TreesToUse, Total15) :- cancer_tree15(D, Total), stepLength_tree15(StepLen), Total15 is Total * StepLen.
+
+getScore_cancer_tree16(D, TreesToUse, 0.0) :- 16 > TreesToUse, !.
+getScore_cancer_tree16(D, TreesToUse, Total16) :- cancer_tree16(D, Total), stepLength_tree16(StepLen), Total16 is Total * StepLen.
+
+getScore_cancer_tree17(D, TreesToUse, 0.0) :- 17 > TreesToUse, !.
+getScore_cancer_tree17(D, TreesToUse, Total17) :- cancer_tree17(D, Total), stepLength_tree17(StepLen), Total17 is Total * StepLen.
+
+getScore_cancer_tree18(D, TreesToUse, 0.0) :- 18 > TreesToUse, !.
+getScore_cancer_tree18(D, TreesToUse, Total18) :- cancer_tree18(D, Total), stepLength_tree18(StepLen), Total18 is Total * StepLen.
+
+getScore_cancer_tree19(D, TreesToUse, 0.0) :- 19 > TreesToUse, !.
+getScore_cancer_tree19(D, TreesToUse, Total19) :- cancer_tree19(D, Total), stepLength_tree19(StepLen), Total19 is Total * StepLen.
+
+getScore_cancer_tree20(D, TreesToUse, 0.0) :- 20 > TreesToUse, !.
+getScore_cancer_tree20(D, TreesToUse, Total20) :- cancer_tree20(D, Total), stepLength_tree20(StepLen), Total20 is Total * StepLen.
+
+flattenedLiteralsInThisSetOfTrees(0, []).
