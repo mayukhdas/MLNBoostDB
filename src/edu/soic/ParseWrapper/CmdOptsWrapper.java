@@ -6,39 +6,48 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 
+import org.apache.commons.io.FileUtils;
+
 public class CmdOptsWrapper {
 	public static final String trainOptionStr = "-l";
-	boolean trainIndicator=false;
+	public boolean trainIndicator=false;
 	
 	public static final String trainDirStr = "-train";
-	String trainPath;
+	public String trainPath;
 	
 	public static final String testOptionStr = "-i";
-	boolean testIndicator;
+	public boolean testIndicator;
 	
 	public static final String testDirStr = "-test";
-	String testPath;
+	public String testPath;
     
 	public static final String modelDirStr = "-model";
-	String modelPath;
+	public String modelPath;
 	
 	public static final String treesStr = "-trees";
-	int trees;
+	public int trees;
 	
 	public static final String targetStr = "-target";
-	String target;
+	public String target;
 	
 	public static final String aucDirStr = "-aucJarPath";
-	String aucJarDir;
+	public String aucJarDir;
 	
 	public static final String posNegStr = "-negPosRatio";
-	String negPosRatio=null;
+	public String negPosRatio=null;
 	
 	public static final String databaseStr = "-dt";
-	String DB;
+	public String DB;
 	
 	
-	public static String bkPathForDB = null;
+	
+	
+	public String bkPathForDB = null;
+	public String evidencePathForDB = null;
+	public CmdOptsWrapper()
+	{
+		
+	}
 	
 	public CmdOptsWrapper(String[] args)
 	{
@@ -72,11 +81,12 @@ public class CmdOptsWrapper {
 				this.DB = args[i+1];
 			}
 		}
-		
+		createDBBk();
+		createEv();
 		
 	}
 	
-	public void createWillBk()
+	public void createDBBk()
 	{
 		String postFix=null;
 		StringBuilder predDefBuild = new StringBuilder();
@@ -87,7 +97,7 @@ public class CmdOptsWrapper {
 			if(dir.isDirectory())
 			{
 				postFix = dir.getName();
-				System.out.println(postFix);
+				//System.out.println(postFix);
 			}
 			else
 			{
@@ -103,33 +113,65 @@ public class CmdOptsWrapper {
 			File bkFile = new File(bkFilePath);
 			BufferedReader bf = new BufferedReader(new FileReader(bkFile));
 			String line="";
-			if((line=bf.readLine())!=null)
+			while((line=bf.readLine())!=null)
 			{
+				System.out.println(line);
+				if(line.startsWith("//////"))
+					continue;
 				if(line.startsWith("import:"))
 				{
 					String temp = line.split(":")[1].trim();
 					temp = temp.substring(0, temp.length()-1);
 					temp = temp.replace('"', ' ').trim();
 					bkFilePath = this.trainPath+"/"+temp;
+					System.out.println("TEMP-----"+temp);
+					break;
 				}
 			}
 			bf.close();
+			//System.out.println(bkFilePath);
 			bkFile = new File(bkFilePath);
 			bf = new BufferedReader(new FileReader(bkFile));
-			BufferedWriter bw = new BufferedWriter(new FileWriter(new File("./DB_bk.txt")));
-			
+			this.bkPathForDB = this.trainPath+"/"+"DB_bk.txt";
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(this.bkPathForDB)));
+			//bw.close();
 			while((line = bf.readLine())!=null)
 			{
+				//System.out.println(line);
 				if(line.startsWith("mode:"))
 				{
 					line = line.trim();
 					String predDef = line.replaceAll("mode:", "predDef:");
-					predDef.replaceAll("+", "").replaceAll("-", "");
+					predDef = predDef.replaceAll("\\+", "").replaceAll("-", "");
+					if(predDef.contains(this.target))
+						predDef = predDef.replaceAll("\\)", ")?");
 					predDefBuild.append(predDef+"\n");	
 					
-					modeBuild.append(line+"\n");
+					String mode = line;
+					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*),", "+#,");
+					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*)\\)", "+#)");
+					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*),", "-#,");
+					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*)\\)", "-#)");
+					mode = mode.replaceAll("#", "");
+					modeBuild.append(mode+"\n");
 				}
 			}
+			System.out.println(predDefBuild.toString());
+			System.out.println(modeBuild.toString());
+			bf.close();
+			
+			String topMatter = "// BK file follows assumption that each predicate name is unique\r\n" + 
+					"// Options for the ILP search:\r\n" + 
+					"option(M) = 20. 	// Number of gradient steps\r\n" + 
+					"option(CM) = 1. 	// Number of clauses learned for each target per gradient step\r\n" + 
+					"option(N) = 4.  	// Maximum length of a clause\r\n" + 
+					"option(B) = 10.		// Beam size";
+		
+			bw.write(topMatter);
+			bw.write(predDefBuild.toString());
+			bw.write(modeBuild.toString());
+		
+			bw.close();
 		}
 		catch(Exception e)
 		{
@@ -138,6 +180,58 @@ public class CmdOptsWrapper {
 		
 	}
 	
+	public void createEv()
+	{
+		
+		try {
+			String postFix=null;
+			File dir = new File(this.trainPath);
+			if(dir.isDirectory())
+			{
+				postFix = dir.getName();
+				System.out.println(postFix);
+			}
+			else
+			{
+				System.out.println("Error in train directory path!!");
+				System.exit(1);
+			}
+			
+			if (postFix.endsWith("/")) {
+				postFix = postFix.substring(0, postFix.length() - 1);
+	        }
+			String sourceStr = this.trainPath+"/"+postFix+"_facts.txt";
+			String destStr = this.trainPath+"/"+postFix+"_factsDB.txt";
+			File source = new File(sourceStr);
+			File dest = new File(destStr);
+			FileUtils.copyFile(source, dest);
+			
+			String posFileStr = this.trainPath+"/"+postFix+"_pos.txt";
+			BufferedReader bf = new BufferedReader(new FileReader(new File(posFileStr)));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(destStr),true));
+			String line;
+			while((line=bf.readLine())!=null)
+			{
+				bw.write(line+"\n");
+			}
+			bw.close();
+			bf.close();
+			this.evidencePathForDB = destStr;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		CmdOptsWrapper cmd = new CmdOptsWrapper();
+		cmd.trainPath = "./Datasets/Toy-Cancer/train";
+		cmd.target = "cancer";
+		cmd.createDBBk();
+		cmd.createEv();
+	}
 	
 	
 }

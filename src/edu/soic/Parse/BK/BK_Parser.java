@@ -117,6 +117,7 @@ public class BK_Parser implements BK_ParserConstants {
     }
     jj_consume_token(13);
                 Predicate p = new Predicate(tp.image, types.size());
+                System.out.println(p.toString());
                 for(int i = 0; i < types.size(); ++i)
                 {
                         p.setType(i, types.get(i));

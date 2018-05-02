@@ -1,0 +1,6 @@
+setParam: stringsAreCaseSensitive = true.
+
+usePrologVariables: true.
+
+
+(cancer(A, 0.17709649774527736) :- smokes(A)).

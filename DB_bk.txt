@@ -1,0 +1,45 @@
+// BK file follows assumption that each predicate name is unique
+// Options for the ILP search:
+option(M) = 20. 	// Number of gradient steps
+option(CM) = 1. 	// Number of clauses learned for each target per gradient step
+option(N) = 4.  	// Maximum length of a clause
+option(B) = 10.		// Beam sizepredDef: author(paper, auth).
+predDef: haswordauthor(auth, word).
+predDef: haswordtitle(title, word).
+predDef: haswordvenue(venue, word).
+predDef: title(paper, title).
+predDef: venue(paper, venue).
+predDef: author(paper, auth).
+predDef: haswordauthor(auth, word).
+predDef: haswordtitle(title, word).
+predDef: haswordvenue(venue, word).
+predDef: title(paper, title).
+predDef: venue(paper, venue).
+predDef: samebib(paper, paper).
+predDef: sametitle(title, title).
+predDef: samevenue(venue, venue).
+predDef: sameauthor(auth, auth)?.
+predDef: samebib(paper, paper).
+predDef: sametitle(title, title).
+predDef: samevenue(venue, venue).
+predDef: sameauthor(auth, auth)?.
+mode: author(+, -).
+mode: haswordauthor(+, -).
+mode: haswordtitle(+, -).
+mode: haswordvenue(+, -).
+mode: title(+, -).
+mode: venue(+, -).
+mode: author(-, +).
+mode: haswordauthor(-, +).
+mode: haswordtitle(-, +).
+mode: haswordvenue(-, +).
+mode: title(-, +).
+mode: venue(-, +).
+mode: samebib(+, -).
+mode: sametitle(+, -).
+mode: samevenue(+, -).
+mode: sameauthor(+, -).
+mode: samebib(-, +).
+mode: sametitle(-, +).
+mode: samevenue(-, +).
+mode: sameauthor(-, +).

@@ -46,6 +46,7 @@ public class Database {
 	/** Executes statement without return value - used for populating the db */
 	public void execute(String s){
 		try {
+			//System.out.println(s);
 			stat.execute(s);
 		} catch (SQLException e) {
 			e.printStackTrace();

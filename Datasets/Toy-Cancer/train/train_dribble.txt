@@ -1,0 +1,307 @@
+% Running on host: DESKTOP-K98RL7C
+
+% Creating string handler #1.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% getInputArgWithDefaultValue: args=[.\Toy-Cancer\train/train_pos.txt, .\Toy-Cancer\train/train_neg.txt, .\Toy-Cancer\train/train_bk.txt, .\Toy-Cancer\train/train_facts.txt]
+%  for N=0: args[N]=.\Toy-Cancer\train/train_pos.txt
+
+% getInputArgWithDefaultValue: args=[.\Toy-Cancer\train/train_pos.txt, .\Toy-Cancer\train/train_neg.txt, .\Toy-Cancer\train/train_bk.txt, .\Toy-Cancer\train/train_facts.txt]
+%  for N=1: args[N]=.\Toy-Cancer\train/train_neg.txt
+
+% getInputArgWithDefaultValue: args=[.\Toy-Cancer\train/train_pos.txt, .\Toy-Cancer\train/train_neg.txt, .\Toy-Cancer\train/train_bk.txt, .\Toy-Cancer\train/train_facts.txt]
+%  for N=2: args[N]=.\Toy-Cancer\train/train_bk.txt
+
+% getInputArgWithDefaultValue: args=[.\Toy-Cancer\train/train_pos.txt, .\Toy-Cancer\train/train_neg.txt, .\Toy-Cancer\train/train_bk.txt, .\Toy-Cancer\train/train_facts.txt]
+%  for N=3: args[N]=.\Toy-Cancer\train/train_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../toy_cancer_bk.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to standard-logic notation for variables; previous setting = uppercase
+
+% Switching to VarIndicator = lowercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = lowercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = lowercase *****
+
+% LoadAllModes() called.  Currently loaded modes: []
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 15 facts.
+% Have read 4 examples from '.\Toy-Cancer\train' [.\Toy-Cancer\train/train*].
+% Have read 0 examples from '.\Toy-Cancer\train' [.\Toy-Cancer\train/train*].
+
+%  LearnOneClause initialized.
+
+% NEW target:                 cancer(a)
+%  targetPred:                cancer/1
+%  targetArgTypes:            signature = [Const], types = [+Person]
+%  targets:                   [cancer(a)]
+%  targetPredicates:          [cancer/1]
+%  targetArgSpecs:            [[a[+Person]]]
+%  variablesInTargets:        [[a]]
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+% Time to collect constants: 2 milliseconds
+% Time to collect examples: 0 seconds
+
+% Read 4 pos examples and 0 neg examples.
+% Time to init learnOneClause: 8 milliseconds
+%   Add combo #1.
+%     MinRelevance(null)/MaxLen(1)/MaxClauses(1)/MinPrec(0.9955)/MaxExpands(10)/MaxCreates(100)/MinPos(1.00)/MaxNegs(-1.00)
+%   Add combo #2.
+%     MinRelevance(null)/MaxLen(3)/MaxClauses(1)/MinPrec(0.9955)/MaxExpands(10)/MaxCreates(100)/MinPos(1.00)/MaxNegs(-1.00)
+%   Add combo #3.
+%     MinRelevance(null)/MaxLen(7)/MaxClauses(1)/MinPrec(0.9955)/MaxExpands(10)/MaxCreates(100)/MinPos(1.00)/MaxNegs(-1.00)
+%   Add combo #4.
+%     MinRelevance(null)/MaxLen(1)/MaxClauses(3)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.14)/MaxNegs(-1.00)
+%   Add combo #5.
+%     MinRelevance(null)/MaxLen(3)/MaxClauses(3)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.14)/MaxNegs(-1.00)
+%   Add combo #6.
+%     MinRelevance(null)/MaxLen(7)/MaxClauses(3)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.14)/MaxNegs(-1.00)
+%   Add combo #7.
+%     MinRelevance(null)/MaxLen(1)/MaxClauses(15)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.10)/MaxNegs(-1.00)
+%   Add combo #8.
+%     MinRelevance(null)/MaxLen(3)/MaxClauses(15)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.10)/MaxNegs(-1.00)
+%   Add combo #9.
+%     MinRelevance(null)/MaxLen(7)/MaxClauses(15)/MinPrec(0.9965)/MaxExpands(10)/MaxCreates(100)/MinPos(0.10)/MaxNegs(-1.00)
+
+% Have 9 Onion combinations to try.
+
+%----------------------------
+% CONSIDERING Settings #1 (1 of 9).
+% (The ONION has been running for a total of 7.00ms
+%  and has 12.00h left;
+%  1.33h have been allotted for this setting)
+%  The differences from the default settings are:
+%   maxNumberOfCycles  = 2
+%   maxNumberOfClauses = 1
+%   maxBodyLength      = 1
+%   maxNodesToCreate   = 100
+%   maxNodesToConsider = 10
+%   minPosCoverage     = 0.9955
+%   maxNegCoverage     = -1.0000
+%   minPrecision       = 0.9955
+%   mEstimatePos       = 0.0100
+%   mEstimateNeg       = 0.0100
+%   map mode '*' to '-'
+%   modes in use: [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+%   all modes:    [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+% ILPparameterSettings.helpRun: annotationForSetting = ONION Layer #1, minPrec=1.00, maxC=1, maxL=1
+
+% Initializing fold 0.
+%   Number of positive TRAIN examples = 4.
+%   Number of negative TRAIN examples = 0.
+%   Number of positive EVAL  examples = 0.
+%   Number of negative EVAL  examples = 0.
+% Have selected pos example #1 as the next seed: cancer(Bob)
+
+% LearnOneClause Parameters:
+%   Targets (1):
+%    cancer(+Person)
+%  Modes (40):
+%    friends(+Person, -Person),
+%    friends(-Person, +Person),
+%    smokes(+Person),
+%    num_of_smoking_friends(+Person, #Number),
+%    addList(+willList, #willNumber),
+%    multiplyList(+willList, #willNumber),
+%    abs(+willNumber, &willNumber),
+%    minus(+willNumber, &willNumber),
+%    minus(+willNumber, +willNumber, &willNumber),
+%    plus(+willNumber, +willNumber, &willNumber),
+%    mult(+willNumber, +willNumber, &willNumber),
+%    div(+willNumber, +willNumber, &willNumber),
+%    allNumbers(+willList),
+%    positiveNumber(+willNumber),
+%    negativeNumber(+willNumber),
+%    in0toDot001(+willNumber),
+%    in0toDot01(+willNumber),
+%    in0toDot1(+willNumber),
+%    in0to1(+willNumber),
+%    in0to10(+willNumber),
+%    in0to100(+willNumber),
+%    in0to1000(+willNumber),
+%    equalWithTolerance(+willNumber, +willNumber, &willNumber),
+%    greaterOrEqualDifference(+willNumber, +willNumber, &willNumber),
+%    smallerOrEqualDifference(+willNumber, +willNumber, &willNumber),
+%    isaEqualTolerance(+willNumber),
+%    lessThan(+willNumber, +willNumber),
+%    greaterThan(+willNumber, +willNumber),
+%    lessThanOrEqual(+willNumber, +willNumber),
+%    greaterThanOrEqual(+willNumber, +willNumber),
+%    inBetweenOO(+willNumber, +willNumber, +willNumber),
+%    inBetweenCO(+willNumber, +willNumber, +willNumber),
+%    inBetweenOC(+willNumber, +willNumber, +willNumber),
+%    inBetweenCC(+willNumber, +willNumber, +willNumber),
+%    memberOfList(+willAnything, +willList),
+%    firstInList(+willList, &willAnything),
+%    restOfList(+willList, &willList),
+%    positionInList(+willAnything, +willList, &willNumber),
+%    nthInList(+willNumber, +willList, &willAnything),
+%    lengthOfList(+willList, &willNumber)
+
+% target           = cancer(a)
+% Gleaner: New best node found (score = 0.997505): cancer(_).  [covers 4.0/4.0 pos, 0.0/0.0 neg]
+% Most-general root: cancer(_).  [covers 4.0/4.0 pos, 0.0/0.0 neg]  score = 0.998
+
+% Skipping over this 'waitHere': This search will never start for 'LearnOneClause': continueTheSearch = false, |open| = 1
+
+% The best node found: cancer(_).  [covers 4.0/4.0 pos, 0.0/0.0 neg]
+
+% The best node found: cancer(_).  [covers 4.0/4.0 pos, 0.0/0.0 neg]
+
+% On cycle #1, the best clause found is:
+%      cancer(_).  [covers 4.0/4.0 pos, 0.0/0.0 neg]
+% This clause covers 4 positive examples, of which 4 are newly covered.
+% It also covers 0 negative examples, of which 0 are newly covered.
+% The current set of 1 best clauses covers 100.0% of the positive examples and NaN% of the negatives.}
+
+% ******************************************
+
+% Have stopped ILP's outer loop because have exceeded the minimal fraction (0.9) of positive examples to cover.
+
+% ******************************************
+
+% Finished fold 0 (0.01s):
+
+% Created a total of 1 clauses and expanded 0 of them.
+% The collection of best clauses per cycle covers 4 (out of 4) pos and 0 (out of 0) neg examples.
+
+% % 
+% % Clauses:
+
+% cancer(a) :- true. // Clause #1.
+
+
+  initially:  |falseNegatives| = 4 and |trueNegatives| = 0.
+     getWeightedCoverage: apply this clause (true => cancer(_))
+  currently:  |falseNegatives| = 0 and |trueNegatives| = 0.
+  initially:  |falseNegatives| = 4 and |trueNegatives| = 0.
+     getWeightedCoverage: apply this clause (true => cancer(_))
+  currently:  |falseNegatives| = 0 and |trueNegatives| = 0.
+
+% Trainset results for
+%  The differences from the default settings are:
+%   maxNumberOfCycles  = 2
+%   maxNumberOfClauses = 1
+%   maxBodyLength      = 1
+%   maxNodesToCreate   = 100
+%   maxNodesToConsider = 10
+%   minPosCoverage     = 0.9955
+%   maxNegCoverage     = -1.0000
+%   minPrecision       = 0.9955
+%   mEstimatePos       = 0.0100
+%   mEstimateNeg       = 0.0100
+%   map mode '*' to '-'
+%   modes in use: [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+%   all modes:    [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+
+ 
+% Clauses:
+
+cancer(a) :- true. // Clause #1.
+
+
+ % Folds = 1, Train: % [TP=4, FP=0, TN=0, FN=0, A=1.00, P=1.00, R=1.00, F1=1.00]
+% precision = 0.998 vs trainset min = 0.990
+% recall    = 0.998 vs trainset min = 0.990
+% accuracy  = 0.995 vs trainset min = 0.990
+% F1        = 0.998 vs trainset min = 0.990
+
+% Can stop because the theory's (weighted) trainset F1 (1.00) reached the minimum specified (0.99).
+
+% ------------------------------------------------
+
+
+% Best Theory Chosen by the Onion:
+    
+%     Clauses:
+
+    cancer(a) :- true. // Clause #1.
+
+
+
+%              Actual
+%             Pos   Neg Total
+% Model Pos     4     0     4
+%       Neg     0     0     0
+%     Total     4     0
+
+% False Pos mEst  = 0.0100
+% False Neg mEst  = 0.0100
+
+% Accuracy  = 0.9950
+% Precision = 0.9975
+% Recall    = 0.9975
+% F(1)      = 0.9975
+
+
+% Chosen Parameter Settings:
+%   maxNumberOfCycles  = 2
+%   maxNumberOfClauses = 1
+%   maxBodyLength      = 1
+%   maxNodesToCreate   = 100
+%   maxNodesToConsider = 10
+%   minNumberOfNegExamples = 1
+%   minPosCoverage     = 0.9955
+%   maxNegCoverage     = -1.0000
+%   minPrecision       = 0.9955
+%   mEstimatePos       = 0.0100
+%   mEstimateNeg       = 0.0100
+%   minimum strength   = null
+%   map mode '*' to '-'
+%   modes in use: [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+%   all modes:    [friends/2, smokes/1, cancer/1, num_of_smoking_friends/2, addList/2, multiplyList/2, abs/2, minus/2, plus/3, minus/3, mult/3, div/3, allNumbers/1, positiveNumber/1, negativeNumber/1, in0toDot001/1, in0toDot01/1, in0toDot1/1, in0to1/1, in0to10/1, in0to100/1, in0to1000/1, equalWithTolerance/3, greaterOrEqualDifference/3, smallerOrEqualDifference/3, isaEqualTolerance/1, lessThan/2, greaterThan/2, lessThanOrEqual/2, greaterThanOrEqual/2, inBetweenOO/3, inBetweenCO/3, inBetweenOC/3, inBetweenCC/3, memberOfList/2, firstInList/2, restOfList/2, positionInList/3, nthInList/3, lengthOfList/2]
+
+% ------------------------------------------------
+
+% Took 50 milliseconds.
+% Executed 12 proofs in 0.00 seconds (13262.36 proofs/sec).
+% Performed 0 unifications while proving Horn clauses.

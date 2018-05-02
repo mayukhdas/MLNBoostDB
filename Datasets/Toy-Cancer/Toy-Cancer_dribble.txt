@@ -1,0 +1,11 @@
+% Running on host: DESKTOP-K98RL7C
+
+% Creating string handler #1.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% getInputArgWithDefaultValue: args=[.\Toy-Cancer/Toy-Cancer_pos.txt, .\Toy-Cancer/Toy-Cancer_neg.txt, .\Toy-Cancer/Toy-Cancer_bk.txt, .\Toy-Cancer/Toy-Cancer_facts.txt]
+%  for N=0: args[N]=.\Toy-Cancer/Toy-Cancer_pos.txt

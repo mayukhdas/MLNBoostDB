@@ -1,0 +1,27 @@
+////// Learned from a dataset containing 4 positive (4.0 weighted sum) and 0 negative (0.0 wgt'ed) examples.
+////// The minimal (wgt'ed) coverage = 0.996 and the minimal (wgt'ed) precision = 0.996 (using m = 0.01)
+
+useStdLogicNotation: true.
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: allPossibleMarkers
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #19, (0.95, 1.01], from 'outerLoop #1_fold0, ONION Layer #1, minPrec=1.00, maxC=1, maxL=1' and covering 4.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.998, precision = 0.998, and F1 = 0.998 - learned after 1 total and 0 acceptable nodes.  Node score = 0.9975051344139652
+cancer(_). // ONION Layer #1, minPrec=1.00, maxC=1, maxL=1
+
+
+////////////////////////////////////////////////////////////////////////////////
+////
+////     Gleaner for: outerLoop #1_fold0, ONION Layer #1, minPrec=1.00, maxC=1, maxL=1
+////
+////////////////////////////////////////////////////////////////////////////////
+
+// Best in (weighted) recall bin #19, (0.95, 1.01], from 'outerLoop #1_fold0, ONION Layer #1, minPrec=1.00, maxC=1, maxL=1' and covering 4.0 wgt'ed positive and 0.0 wgt'ed negative examples:
+//    Wgt'ed recall = 0.998, precision = 0.998, and F1 = 0.998 - learned after 1 total and 0 acceptable nodes.  Node score = 0.9975051344139652
+cancer(_). // ONION Layer #1, minPrec=1.00, maxC=1, maxL=1
+
