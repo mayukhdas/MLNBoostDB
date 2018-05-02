@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
 
 import org.apache.commons.io.FileUtils;
 
@@ -25,7 +26,7 @@ public class CmdOptsWrapper {
 	public String modelPath;
 	
 	public static final String treesStr = "-trees";
-	public int trees;
+	public int trees=5;
 	
 	public static final String targetStr = "-target";
 	public String target;
@@ -116,7 +117,7 @@ public class CmdOptsWrapper {
 			while((line=bf.readLine())!=null)
 			{
 				System.out.println(line);
-				if(line.startsWith("//////"))
+				if(line.startsWith("//"))
 					continue;
 				if(line.startsWith("import:"))
 				{
@@ -135,6 +136,7 @@ public class CmdOptsWrapper {
 			this.bkPathForDB = this.trainPath+"/"+"DB_bk.txt";
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(this.bkPathForDB)));
 			//bw.close();
+			ArrayList<String> pDefExists = new ArrayList<String>();
 			while((line = bf.readLine())!=null)
 			{
 				//System.out.println(line);
@@ -145,14 +147,20 @@ public class CmdOptsWrapper {
 					predDef = predDef.replaceAll("\\+", "").replaceAll("-", "");
 					if(predDef.contains(this.target))
 						predDef = predDef.replaceAll("\\)", ")?");
-					predDefBuild.append(predDef+"\n");	
+					if(!pDefExists.contains(predDef))
+					{
+						predDefBuild.append(predDef+"\n");	
+						pDefExists.add(predDef);
+					}
 					
 					String mode = line;
-					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*),", "+#,");
-					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*)\\)", "+#)");
-					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*),", "-#,");
-					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*)\\)", "-#)");
-					mode = mode.replaceAll("#", "");
+					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*),", "+@@,");
+					mode = mode.replaceAll("\\+([A-Z]*|[a-z]*|[0-9]*)\\)", "+@@)");
+					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*),", "-@@,");
+					mode = mode.replaceAll("-([A-Z]*|[a-z]*|[0-9]*)\\)", "-@@)");
+					mode = mode.replaceAll("#([A-Z]*|[a-z]*|[0-9]*),", "#@@,");
+					mode = mode.replaceAll("#([A-Z]*|[a-z]*|[0-9]*)\\)", "#@@)");
+					mode = mode.replaceAll("@@", "");
 					modeBuild.append(mode+"\n");
 				}
 			}
@@ -162,10 +170,10 @@ public class CmdOptsWrapper {
 			
 			String topMatter = "// BK file follows assumption that each predicate name is unique\r\n" + 
 					"// Options for the ILP search:\r\n" + 
-					"option(M) = 20. 	// Number of gradient steps\r\n" + 
+					"option(M) = "+this.trees+". 	// Number of gradient steps\r\n" + 
 					"option(CM) = 1. 	// Number of clauses learned for each target per gradient step\r\n" + 
 					"option(N) = 4.  	// Maximum length of a clause\r\n" + 
-					"option(B) = 10.		// Beam size";
+					"option(B) = 10.		// Beam size\r\n";
 		
 			bw.write(topMatter);
 			bw.write(predDefBuild.toString());

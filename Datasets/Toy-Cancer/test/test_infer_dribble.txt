@@ -1,0 +1,302 @@
+% Running on host: BL-SOIC-30ZND42
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[.\Datasets\Toy-Cancer\test/test_pos.txt, .\Datasets\Toy-Cancer\test/test_neg.txt, .\Datasets\Toy-Cancer\test/test_bk.txt, .\Datasets\Toy-Cancer\test/test_facts.txt]
+%  for N=0: args[N]=.\Datasets\Toy-Cancer\test/test_pos.txt
+
+% getInputArgWithDefaultValue: args=[.\Datasets\Toy-Cancer\test/test_pos.txt, .\Datasets\Toy-Cancer\test/test_neg.txt, .\Datasets\Toy-Cancer\test/test_bk.txt, .\Datasets\Toy-Cancer\test/test_facts.txt]
+%  for N=1: args[N]=.\Datasets\Toy-Cancer\test/test_neg.txt
+
+% getInputArgWithDefaultValue: args=[.\Datasets\Toy-Cancer\test/test_pos.txt, .\Datasets\Toy-Cancer\test/test_neg.txt, .\Datasets\Toy-Cancer\test/test_bk.txt, .\Datasets\Toy-Cancer\test/test_facts.txt]
+%  for N=2: args[N]=.\Datasets\Toy-Cancer\test/test_bk.txt
+
+% getInputArgWithDefaultValue: args=[.\Datasets\Toy-Cancer\test/test_pos.txt, .\Datasets\Toy-Cancer\test/test_neg.txt, .\Datasets\Toy-Cancer\test/test_bk.txt, .\Datasets\Toy-Cancer\test/test_facts.txt]
+%  for N=3: args[N]=.\Datasets\Toy-Cancer\test/test_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../toy_cancer_bk.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to standard-logic notation for variables; previous setting = uppercase
+
+% Switching to VarIndicator = lowercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = lowercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = lowercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+% [ LazyGroundClauseIndex ]  Building full index for sameAs/2 with 2 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for exp/3.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for log/3.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 13 facts.
+% Have read 3 examples from '.\Datasets\Toy-Cancer\test' [.\Datasets\Toy-Cancer\test/test*].
+% Have read 2 examples from '.\Datasets\Toy-Cancer\test' [.\Datasets\Toy-Cancer\test/test*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% NEW target:                 cancer(a)
+%  targetPred:                cancer/1
+%  targetArgTypes:            signature = [Const], types = [+person]
+%  targets:                   [cancer(a)]
+%  targetPredicates:          [cancer/1]
+%  targetArgSpecs:            [[a[+person]]]
+%  variablesInTargets:        [[a]]
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+% Time to collect constants: 0 seconds
+% Time to collect examples: 0 seconds
+
+% Read 3 pos examples and 2 neg examples.
+% Time to init learnOneClause: 16 milliseconds
+% Old dir./Datasets/Toy-Cancer/model/
+
+% Have 3 'raw' positive examples and kept 3.
+% Have 2 'raw' negative examples and kept 2.
+
+% processing backup's for cancer
+%  POS EX = 3
+%  NEG EX = 2
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 0
+%  |addedToFactBase|   = 0
+
+% Getting bRDN's target predicates.
+% Did not learn a model for 'cancer' this run.
+%   loadModel (#0): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree0.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#1): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree1.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#2): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree2.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#3): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree3.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#4): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree4.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#5): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree5.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#6): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree6.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#7): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree7.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#8): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree8.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#9): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree9.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#10): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree10.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#11): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree11.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#12): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree12.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#13): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree13.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#14): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree14.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#15): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree15.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#16): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree16.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#17): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree17.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#18): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree18.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%   loadModel (#19): ./Datasets/Toy-Cancer/model/bRDNs/Trees/cancerTree19.tree
+
+% Switching to Prolog notation for variables; previous setting = lowercase
+
+% Switching to VarIndicator = uppercase.
+
+% Switching to VarIndicator = lowercase.
+%  Done loading 20 models.
+File: .\Datasets\Toy-Cancer\test/advice.txt doesnt exist.Hence no advice loaded
+
+% for cancer |lookupPos| = 3
+% for cancer |lookupNeg| = 2
+% getJointExamples: |pos| = 3, |neg| = 2
+
+% Starting inference in bRDN.
+% Trees = 20
+
+% Starting getMarginalProbabilities.
+% [ LazyGroundClauseIndex ]  Building full index for smokes/1 with 3 assertions.
+% No Gibbs sampling needed during inference.
+ (Arithmetic) Mean Probability Assigned to Correct Output Class: 4.549/5.00 = 0.909831
+
+ The weighted count of positive examples = 3.000 and the weighted count of negative examples = 2.000
+
+printExamples: Writing out predictions (for Tuffy?) on 5 examples for 'cancer' to:
+  .\Datasets\Toy-Cancer\test/results_cancer.db
+ and to:
+  .\Datasets\Toy-Cancer\test/query_cancer.db
+%    No need to compress since small: .\Datasets\Toy-Cancer\test/query_cancer.db
+
+% Computing Area Under Curves.
+%Pos=3
+%Neg=2
+%LL:-0.17197811790384432
+%LL:-0.47793333895599266
+
+% Running command: java -jar .//auc.jar .\Datasets\Toy-Cancer\test/AUC/aucTemp.txt list 0.0
+% WAITING FOR command: java -jar .//auc.jar .\Datasets\Toy-Cancer\test/AUC/aucTemp.txt list 0.0
+% DONE WAITING FOR command: java -jar .//auc.jar .\Datasets\Toy-Cancer\test/AUC/aucTemp.txt list 0.0
+% F1 = 1.0
+% Threshold = 0.5430686048385636
+
+%   AUC ROC   = 1.000000
+%   AUC PR    = 1.000000
+%   CLL	      = -0.095587
+%   Precision = 1.000000 at threshold = 0.500
+%   Recall    = 1.000000
+%   F1        = 1.000000
+
+% Total inference time (20 trees): 627 milliseconds.

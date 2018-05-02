@@ -3,7 +3,7 @@
 option(M) = 20. 	// Number of gradient steps
 option(CM) = 1. 	// Number of clauses learned for each target per gradient step
 option(N) = 4.  	// Maximum length of a clause
-option(B) = 10.		// Beam sizepredDef: friends(person, person).
+option(B) = 10.		// Beam size
 predDef: friends(person, person).
 predDef: smokes(person).
 predDef: cancer(person)?.
