@@ -7,7 +7,7 @@ excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Devel
 
 *Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform*
 
-*<b>Warning!!  Further note that this implementation does NOT work with precomputes in the BK file. PLEASE remove all precomputes and/or derived predicates that are not directly present in the evidence</b>*
+*<b>Warning!!  Further note that this implementation <u>does NOT work with precomputes or derived precidates</u> in the BK file. PLEASE remove all precomputes and/or derived predicates that are not directly present in the evidence</b>*
 
 ### Primary Runnable Binary
 
