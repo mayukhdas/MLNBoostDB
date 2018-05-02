@@ -1,13 +1,10 @@
-# MLNBoostDBMarcin
-
-The Development version of Marcin's code on database integration of MLN-Boost.
-Current I am writing a wrapper on top of it to make it interface the same way as MLN-Boost.
+# MLNBoostDB
 
 ---
 title: "Basic Parameters"
 author: Mayukh Das
 permalink: /software/boostsrl/wiki/basic-parameters/
-excerpt: "Basic overview for commandline arguments used by MLNBoostDB."
+excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Development version of Marcin's code on database integration of MLN-Boost. A wrapper ensures same ars structure as MLN-Boost."
 ---
 
 *Note that this is for learning a Boosted MLN with in-memory Relational Database integration.* 
