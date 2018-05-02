@@ -26,9 +26,10 @@ excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Devel
 * `-mln` : Set this flag, if you want to learn MLNs instead of RDNs 
 * `-mlnClauseLen` : If -mlnclause is set, set the length of the clauses learned during each gradient step. 
 
+Additional arguments for Databse:
+* `-dt <Database Type [hsqldb | H2]>` : Choice of in-memory database to be used. 2 options available <b>hsqldb</b> (preferred) OR <b>H2</b>. 
 
-
-Paper:
+### Paper:
 
 > Tushar Khot, Sriraam Natarajan, Kristian Kersting, Jude Shavlik.Learning Markov Logic Networks via Functional Gradient Boosting. In ICDM 2011. 
 
