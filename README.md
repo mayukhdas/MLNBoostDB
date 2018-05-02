@@ -1,13 +1,13 @@
 ---
-title: "Basic Parameters"
-author: Mayukh Das
-original author: Marcin Malec
-excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Development version of Marcin's code on database integration of MLN-Boost. A wrapper ensures same ars structure as MLN-Boost."
+Title: "Basic Parameters"
+Author: Mayukh Das
+Original author: Marcin Malec
+excerpt: "Basic usage overview MLNBoostDB. Extension of Marcin's code on database integrated MLN-Boost. A wrapper ensures same command line argument structure as MLN-Boost."
 ---
 
 *Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform*
 
-*<b>Warning!!  Further note that this implementation <u>DOES NOT WORK with PRECOMPUTES or derived precidates</u> in the BK file. PLEASE REMOVE all precomputes and/or derived predicates that are not directly present in the evidence</b>*
+<b>Warning!!  Further note that this implementation <u>DOES NOT WORK with PRECOMPUTES or derived precidates</u> in the BK file. PLEASE REMOVE all precomputes and/or derived predicates that are not directly present in the evidence. Simple mode declarations should work perfectly.</b>
 
 ### Primary Runnable Binary
 
