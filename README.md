@@ -5,7 +5,10 @@ original author: Marcin Malec
 excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Development version of Marcin's code on database integration of MLN-Boost. A wrapper ensures same ars structure as MLN-Boost."
 ---
 
-*Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform* 
+*Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform*
+
+*<b>Warning!!  Further note that this implementation does NOT work with precomputes in the BK file. PLEASE remove all precomputes and/or derived predicates that are not directly present in the evidence</b>*
+
 ### Primary Runnable Binary
 
 * `MLN-Boost-DB.jar`
