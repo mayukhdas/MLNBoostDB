@@ -1,5 +1,3 @@
-# MLNBoostDB
-
 ---
 title: "Basic Parameters"
 author: Mayukh Das
