@@ -5,7 +5,12 @@ original author: Marcin Malec
 excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Development version of Marcin's code on database integration of MLN-Boost. A wrapper ensures same ars structure as MLN-Boost."
 ---
 
-*Note that this is for learning a Boosted MLN with in-memory Relational Database integration.* 
+*Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform* 
+### Primary Runnable Binary
+
+* `MLN-Boost-DB.jar`
+
+*Download the whole repository for easy resolution of dependencies*
 
 ### Simple Usage:
 
@@ -15,7 +20,6 @@ excerpt: "Basic overview for commandline arguments used by MLNBoostDB. The Devel
 
 * `-l` : enable training (**l**earning).
 * `-i` : enable testing (**i**nference).
-* `-noBoost` : disable Boosting (i.e., learns a single relational regression tree).
 * `-train <Training directory>` : Path to the training directory in predicate logic format.
 * `-test <Testing directory>` : Path to the testing directory in predicate logic format format.
 * `-model <Model directory>` : Path to the directory with the stored models [or where they will be stored].
@@ -31,8 +35,9 @@ Additional arguments for Databse:
 
 ### Paper:
 
-> Tushar Khot, Sriraam Natarajan, Kristian Kersting, Jude Shavlik.Learning Markov Logic Networks via Functional Gradient Boosting. In ICDM 2011. 
+> Marcin Malec, Tushar Khot, James Nagy, Erik Blasch, and Sriraam Natarajan. Inductive Logic Programming meets Relational Databases: An Application to Statistical Relational Learning. In ILP 2016
 
+> Tushar Khot, Sriraam Natarajan, Kristian Kersting, Jude Shavlik.Learning Markov Logic Networks via Functional Gradient Boosting. In ICDM 2011. 
 ---
 
 ### Sample Calls:
