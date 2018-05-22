@@ -14,6 +14,7 @@ excerpt: "Basic usage overview MLNBoostDB."
 * `MLN-Boost-DB.jar`
 
 *Download the whole repository for easy resolution of dependencies*
+*If using souce code make sure to include all libraries in the `lib` folder in your build path*
 
 ### Simple Usage:
 
