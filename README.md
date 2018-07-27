@@ -2,9 +2,10 @@
 Title: "Basic Parameters"
 Author: Mayukh Das
 Original author: Marcin Malec
-License: [![][license img]][license]
 excerpt: "Basic usage overview MLNBoostDB."
 ---
+
+License: [![][license img]][license]
 
 *Note that this is for learning a Boosted MLN with in-memory Relational Database integration (Malec et al. ILP 2016). This is an extension where wrapper ensures same command line argument structure as MLN-Boost. Most arguments are same as the original MLN-Boost(Khot et al. ICDM 2011) platform. Few that are different have been stated below.*
 
