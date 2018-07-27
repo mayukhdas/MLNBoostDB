@@ -2,6 +2,7 @@
 Title: "Basic Parameters"
 Author: Mayukh Das
 Original author: Marcin Malec
+License: [![][license img]][license]
 excerpt: "Basic usage overview MLNBoostDB."
 ---
 
