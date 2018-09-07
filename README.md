@@ -52,7 +52,7 @@ Additional arguments for Databse:
 
 *Try to follow along with what each of these are doing:*
 
-From the [Smokes-Friends-Cancer Dataset](Smokes-Friends-Cancer Dataset):
+From the ![Smokes-Friends-Cancer Dataset](https://github.com/mayukhdas/MLNBoostDB/tree/master/Datasets/Cancer):
 
 * `java -jar BoostSRL.jar -l -train ./Datasets/Toy-Cancer/train -model ./Datasets/Toy-Cancer/model -dt hsqldb -target cancer -i -test ./Datasets/Toy-Cancer/test -aucJarPath ./ -trees 20`
 
