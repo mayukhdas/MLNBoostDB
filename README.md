@@ -56,4 +56,6 @@ From the [Smokes-Friends-Cancer Dataset](Smokes-Friends-Cancer Dataset):
 
 * `java -jar BoostSRL.jar -l -train ./Datasets/Toy-Cancer/train -model ./Datasets/Toy-Cancer/model -dt hsqldb -target cancer -i -test ./Datasets/Toy-Cancer/test -aucJarPath ./ -trees 20`
 
+**Warning: Presently "hsqldb" works perfectly. Do not use the other database.**
+
 
